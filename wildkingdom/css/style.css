@@ -179,7 +179,7 @@ body {
   left: 0;
   transition: opacity .3s;
   opacity: .5;
-  background: url(../../../img/bg-button.webp) center/cover no-repeat
+  background: url(../img/bg-button.webp) center/cover no-repeat
 }
 .button span {
   position: relative

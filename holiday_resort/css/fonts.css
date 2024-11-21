@@ -1,0 +1,23 @@
+@font-face {
+	font-family: "Source Sans Pro";
+	src: url("../fonts/sourcesanspro-regular-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Source Sans Pro";
+	src: url("../fonts/sourcesanspro-semibold-webfont.woff2") format("woff2");
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Bodoni 72";
+	src: url("../fonts/bodoni-72-book-webfont.woff2") format("woff2");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

@@ -229,7 +229,6 @@ body {
   margin-bottom: .9375rem
 }
 .header {
-  border-bottom: .0625rem solid rgba(131,131,131,.212);
   position: fixed;
   z-index: 50;
   top: 0;
@@ -244,7 +243,11 @@ body {
   min-height: 5rem;
   align-items: center;
   padding-top: .3125rem;
-  padding-bottom: .3125rem
+  padding-bottom: .3125rem;
+  transition: min-height .8s
+}
+._header-scroll .header__container {
+  min-height: 3.125rem
 }
 .header__logo {
   font-weight: 700;
@@ -279,6 +282,9 @@ body {
   -webkit-text-decoration: underline transparent;
   text-decoration: underline transparent;
   transition: all .3s
+}
+.menu__link._navigator-active {
+  text-decoration: underline
 }
 .menu__item--parent .menu__link {
   display: flex;

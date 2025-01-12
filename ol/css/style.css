@@ -234,7 +234,13 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255,249,244,.9)
+  color: rgba(255,249,244,.9019607843);
+  background-color: rgba(255,249,244,0);
+  transition: background-color .3s
+}
+.header._header-scroll {
+  background-color: rgba(255,249,244,.902);
+  color: #222
 }
 .header__container {
   display: grid;
@@ -253,7 +259,6 @@ body {
   font-weight: 700;
   font-family: "Noto Sans Georgian";
   font-family: Arsenal;
-  color: #222;
   position: relative;
   z-index: 5
 }
@@ -278,7 +283,6 @@ body {
   font-size: .875rem;
   font-weight: 500;
   line-height: 1.4;
-  color: #222;
   -webkit-text-decoration: underline transparent;
   text-decoration: underline transparent;
   transition: all .3s
@@ -292,16 +296,6 @@ body {
   -moz-column-gap: .3125rem;
   column-gap: .3125rem;
   align-items: center
-}
-.menu__item--parent .menu__link::after {
-  content: "";
-  width: 1rem;
-  height: .5rem;
-  flex: 0 0 1rem;
-  background: url(../img/icons/ar-down.svg) 0 0 no-repeat;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s,-webkit-transform .3s
 }
 .submenu {
   position: absolute;
@@ -422,7 +416,7 @@ body {
   left: 0;
   background-color: #000;
   z-index: 2;
-  opacity: .4
+  opacity: .3
 }
 .hero__pagination.swiper-pagination-bullets.swiper-pagination-horizontal {
   position: absolute;
@@ -511,9 +505,6 @@ body {
   -o-object-fit: cover;
   object-fit: cover
 }
-.page__hero {
-  padding-top: 5rem
-}
 .swiper {
   overflow: hidden
 }
@@ -593,7 +584,7 @@ body {
     right: 1.875rem
   }
   .slide-hero__body {
-    padding-top: 8.125rem
+    padding-top: 12.5rem
   }
   .slide-hero__body {
     padding-bottom: 8.125rem
@@ -643,7 +634,7 @@ body {
     font-size: .875rem
   }
   .slide-hero__body {
-    padding-top: 6.25rem
+    padding-top: 9.375rem
   }
   .slide-hero__body {
     padding-bottom: 1.875rem
@@ -713,7 +704,12 @@ body {
     position: absolute;
     width: 100%;
     height: .125rem;
-    background-color: #000
+    background-color: rgba(255,249,244,.9019607843)
+  }
+  ._header-scroll .icon-menu span,
+  ._header-scroll .icon-menu::after,
+  ._header-scroll .icon-menu::before {
+    background-color: #222
   }
   .icon-menu::before {
     top: 0
@@ -726,6 +722,10 @@ body {
   }
   .menu-open .icon-menu span {
     width: 0
+  }
+  .menu-open .icon-menu::after,
+  .menu-open .icon-menu::before {
+    background-color: #222
   }
   .menu-open .icon-menu::before {
     top: calc(50% - .0625rem);
@@ -784,9 +784,6 @@ body {
   .hero__arrow {
     display: none
   }
-  .page__hero {
-    padding-top: 3.125rem
-  }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
@@ -825,7 +822,7 @@ body {
     font-size: clamp(.875rem ,.7308558559rem + .7207207207vw ,1.375rem)
   }
   .slide-hero__body {
-    padding-top: clamp(6.25rem ,5.7094594595rem + 2.7027027027vw ,8.125rem)
+    padding-top: clamp(9.375rem ,8.4740990991rem + 4.5045045045vw ,12.5rem)
   }
   .slide-hero__body {
     padding-bottom: clamp(1.875rem ,.0731981982rem + 9.009009009vw ,8.125rem)

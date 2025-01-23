@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20250120165712">
+	<link rel="stylesheet" href="css/style.min.css?_v=20250123115943">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,13 @@
 	<div class="wrapper">
 		<header class="header header--prjct">
 			<div class="header__container">
-				<div class="header__logo">Олена Левченко</div>
+				<a href="index.html" class="header__logo header__logo--link">Олена Левченко</a>
 				<div class="header__menu menu">
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
 					<nav class="menu__body">
 						<ul class="menu__list">
 							<li class="menu__item menu__item--parent">
-								<a href="index.html" data-goto-header data-goto=".hero" class="menu__link">Про автора</a>
+								<a href="index.html" class="menu__link">Про автора</a>
 								<div class="submenu">
 									<ul class="submenu__list">
 										<li class="submenu__item">
@@ -35,11 +35,11 @@
 								</div>
 							</li>
 							<li class="menu__item menu__item--parent">
-								<a href="#" data-goto-header data-goto=".project1" class="menu__link menu__link--prjct">Проєкти</a>
+								<a href="project1.html" class="menu__link menu__link--prjct">Проєкти</a>
 								<div class="submenu">
 									<ul class="submenu__list">
 										<li class="submenu__item">
-											<a href="#" data-goto-header data-goto=".project1" class="submenu__link">Геометрія
+											<a href="project1.html" class="submenu__link">Геометрія
 												повсякденності</a>
 										</li>
 										<li class="submenu__item">
@@ -72,19 +72,13 @@
 			</div>
 		</header>
 		<main class="page">
-			<section data-watch="navigator" class="page__project project1">
-				<div class="project1__body">
+			<!-- <section class="page__project project1">
+				<div data-watch="" class="project1__body">
 					<div class="project1__container">
 						<div class="block-header">
-							<h1 class="block-header__title">Mondrian Sponges: "Геометрія повсякденності"</h1>
+							<h1 class="block-header__title"><span>Mondrian Sponges</span> : "Геометрія повсякденності"</h1>
 							<h4 class="block-header__subtitle">Опис:</h4>
 							<div class="block-header__text">
-								<p>
-									Створення цієї серії дало можливість мені виринути із військових новин та ракетних атак
-									,віднайти психологічну рівновагу та прийти до більш-менш нормального життя.
-									Кожний день створюючи композицію для наступної фотографії, я лікувалась кольором , вивчала
-									гармонії поєднання та взаємодію текстур та форм.
-								</p>
 								<p>
 									Серія “Mondrian Sponges” являє для мене оригінальну інтерпретацію знаменитого стилю
 									нео-пластицизму, створеного Пітом Мондріаном. Замість традиційних фарб і полотен я
@@ -92,12 +86,9 @@
 									художника. Яскраві кольори та текстури губок створюють враження гри зі сприйняттям, з’єднуючи
 									світ мистецтва і повсякденні предмети побуту.
 								</p>
-								<p>
-									Ця серія фотографій підкреслює естетику у звичайних речах та спонукає побачити красу навіть у
-									таких простих предметах, як губки для миття посуду.
-								</p>
 							</div>
 						</div>
+						<a href="#" data-goto=".project1" class="up _icon-a-up"></a>
 					</div>
 					<article class="project1__row">
 						<div class="project1__column project1__column--big">
@@ -255,6 +246,128 @@
 						</div>
 					</div>
 				</div>
+			</section> -->
+			<!-- Варіант без окремого блоку галереї-->
+			<section class="page__project project1">
+				<div class="project1__body">
+					<div data-watch class="project1__container">
+						<div class="block-header">
+							<h1 class="block-header__title"><span>Mondrian Sponges</span> : "Геометрія повсякденності"</h1>
+							<img class="block-header__image ibg" src="img/project1/description/sp01.webp" alt="Image">
+							<h4 class="block-header__subtitle">Опис та галерея проекту:</h4>
+							<div class="block-header__text">
+								<p>
+									Створення цієї серії дало можливість мені виринути із військових новин та ракетних атак,
+									віднайти психологічну рівновагу та прийти до більш-менш нормального життя.
+									Кожний день створюючи композицію для наступної фотографії, я лікувалась кольором, вивчала
+									гармонії поєднання та взаємодію текстур та форм.
+								</p>
+							</div>
+							<a href="#" data-goto=".page__project" class="up _icon-a-up"></a>
+						</div>
+					</div>
+					<article class="project1__row">
+						<div class="project1__column project1__column--big">
+							<div data-gallery class="project1__item item">
+								<a href="img/project1/description/sp02.webp" class="item__image">
+									<img class="ibg" src="img/project1/description/sp02.webp" alt="Mondrian Spongesі">
+								</a>
+							</div>
+						</div>
+						<div class="project1__column">
+							<div class="project1__content block-header block-header--min">
+								<h2 class="block-header__title block-header__title--min">Геометрія повсякденності</h2>
+								<div class="block-header__text block-header__text--justify">
+									<p>
+										Серія “Mondrian Sponges” являє для мене оригінальну інтерпретацію знаменитого стилю
+										нео-пластицизму, створеного Пітом Мондріаном.
+									</p>
+								</div>
+							</div>
+							<div class="project1__image">
+								<img class="ibg" src="img/project1/description/sp03.webp" alt="Image">
+							</div>
+						</div>
+					</article>
+					<article class="project1__row project1__row--reversed">
+						<div class="project1__column project1__column--big">
+							<div data-gallery class="project1__item item">
+								<a href="img/project1/description/sp04.webp" class="item__image">
+									<img class="ibg" src="img/project1/description/sp04.webp" alt="Mondrian Sponges">
+								</a>
+							</div>
+						</div>
+						<div class="project1__column">
+							<div class="project1__content block-header block-header--min">
+								<h2 class="block-header__title block-header__title--min">Геометрія повсякденності</h2>
+								<div class="block-header__text block-header__text--justify">
+									<p>
+										Замість традиційних фарб і полотен я
+										використовувала кухонні губки, які розташовані таким чином, що нагадують культові роботи
+										художника.
+									</p>
+								</div>
+							</div>
+							<div class="project1__image">
+								<img class="ibg" src="img/project1/description/sp05.webp" alt="Image">
+							</div>
+						</div>
+					</article>
+					<article class="project1__row project1__row--last">
+						<div class="project1__column">
+							<div data-gallery class="project1__item item">
+								<a href="img/project1/description/sp13.webp" class="item__image item__image--lastblock">
+									<img class="ibg" src="img/project1/description/sp13.webp" alt="Mondrian Sponges">
+								</a>
+							</div>
+						</div>
+						<div class="project1__column">
+							<div class="project1__content block-header block-header--min">
+								<h2 class="block-header__title block-header__title--min">Геометрія повсякденності</h2>
+								<div class="block-header__text block-header__text--justify">
+									<p>
+										Яскраві кольори та текстури губок створюють враження гри зі сприйняттям, з’єднуючи
+										світ мистецтва і повсякденні предмети побуту.
+									</p>
+								</div>
+							</div>
+							<div class="project1__image">
+								<img class="ibg" src="img/project1/description/sp12.webp" alt="Image">
+							</div>
+						</div>
+						<div class="project1__column">
+							<div data-gallery class="project1__item item">
+								<a href="img/project1/description/sp11.webp" class="item__image item__image--lastblock">
+									<img class="ibg" src="img/project1/description/sp11.webp" alt="Mondrian Sponges">
+								</a>
+							</div>
+						</div>
+					</article>
+					<article class="project1__row project1__row--reversed">
+						<div class="project1__column project1__column--big">
+							<div data-gallery class="project1__item item">
+								<a href="img/project1/description/sp09.webp" class="item__image">
+									<img class="ibg" src="img/project1/description/sp09.webp" alt="Mondrian Sponges">
+								</a>
+							</div>
+						</div>
+						<div class="project1__column">
+							<div class="project1__content block-header block-header--min">
+								<h2 class="block-header__title block-header__title--min">Геометрія повсякденності</h2>
+								<div class="block-header__text block-header__text--justify">
+									<p>
+										Ця серія фотографій підкреслює естетику у звичайних речах та спонукає побачити красу
+										навіть у
+										таких простих предметах, як губки для миття посуду.
+									</p>
+								</div>
+							</div>
+							<div class="project1__image">
+								<img class="ibg" src="img/project1/description/sp08.webp" alt="Image">
+							</div>
+						</div>
+					</article>
+				</div>
 			</section>
 		</main>
 		<footer data-watch="navigator" class="footer">
@@ -280,9 +393,9 @@
 						<div class="footer__social">
 							<a href="#" target="_blank" class="footer__social-item _icon-s-fb"></a>
 							<a href="#" target="_blank" class="footer__social-item _icon-s-insta"></a>
-							<a href="#" target="_blank" class="footer__social-item _icon-s-linkedin"></a>
-							<a href="#" target="_blank" class="footer__social-item _icon-x"></a>
-							<a href="#" target="_blank" class="footer__social-item _icon-youtube"></a>
+							<!-- <a href="#" target="_blank" class="footer__social-item _icon-s-linkedin"></a>
+					<a href="#" target="_blank" class="footer__social-item _icon-x"></a>
+					<a href="#" target="_blank" class="footer__social-item _icon-youtube"></a> -->
 						</div>
 					</div>
 					<div class="footer__copy">
@@ -296,11 +409,12 @@
 							Зверстано АС
 						</p>
 					</div>
+
 				</div>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20250120165712"></script>
+	<script src="js/app.min.js?_v=20250123115943"></script>
 </body>
 
 </html>

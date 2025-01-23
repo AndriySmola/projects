@@ -218,11 +218,18 @@ body {
   line-height: 1.38;
   text-transform: uppercase
 }
+.block-header__title span {
+  font-style: italic;
+  text-transform: capitalize
+}
 .block-header__title--min {
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 1.38;
   text-transform: uppercase
+}
+.block-header__image {
+  max-width: 18.75rem
 }
 .block-header__subtitle {
   line-height: 1.38;
@@ -247,6 +254,25 @@ body {
   font-style: italic;
   font-size: 1rem;
   text-align: center
+}
+.up {
+  position: fixed;
+  bottom: 1.25rem;
+  right: .625rem;
+  color: #838383;
+  height: 1.875rem;
+  width: 1.875rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(255,255,255,.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s
+}
+._watcher-view .up {
+  opacity: 0;
+  visibility: hidden
 }
 .header {
   position: fixed;
@@ -285,6 +311,11 @@ body {
 }
 .menu-open .header__logo {
   color: #222
+}
+.header__logo--link {
+  -webkit-text-decoration: underline .09375rem rgba(255,249,244,0);
+  text-decoration: underline .09375rem rgba(255,249,244,0);
+  transition: all .3s
 }
 .header--prjct {
   background-color: #222
@@ -548,15 +579,6 @@ body {
 .project1__row--reversed .project1__column:nth-child(1) {
   order: 2
 }
-.project1__row--last .project1__column:nth-child(2) {
-  order: 1
-}
-.project1__row--last .project1__column:nth-child(1) {
-  order: 2
-}
-.project1__row--last .project1__column:nth-child(3) {
-  order: 3
-}
 .project1__column {
   flex: 0 1 33.3333%
 }
@@ -579,6 +601,16 @@ body {
 }
 .item__image img {
   aspect-ratio: 1067/600
+}
+.item__image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(34,34,34,0);
+  transition: all .3s
 }
 .item__image--lastblock img {
   aspect-ratio: 534/600
@@ -1181,13 +1213,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 1.875rem
   }
   .block-header__title:not(:last-child) {
-    margin-bottom: 3.75rem
+    margin-bottom: 2.5rem
   }
   .block-header__title--min:not(:last-child) {
     margin-bottom: 3.75rem
   }
-  .block-header__subtitle:not(:last-child) {
+  .block-header__image:not(:last-child) {
     margin-bottom: 3.75rem
+  }
+  .block-header__subtitle:not(:last-child) {
+    margin-bottom: 1.875rem
+  }
+  .up {
+    font-size: 1.25rem
   }
   .header__logo {
     font-size: 1.875rem
@@ -1252,13 +1290,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding-top: 12.5rem
   }
   .page__project {
-    padding-bottom: 7.5rem
-  }
-  .project1__body {
-    padding-bottom: 9.375rem
+    padding-bottom: 5rem
   }
   .project1__container {
-    padding-bottom: 6.25rem
+    padding-bottom: 3.75rem
   }
   .project1__content {
     padding-top: 4.375rem
@@ -1286,14 +1321,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .block-header__title--min:not(:last-child) {
     margin-bottom: 1.875rem
   }
-  .block-header__subtitle:not(:last-child) {
+  .block-header__image:not(:last-child) {
     margin-bottom: 1.875rem
+  }
+  .block-header__subtitle:not(:last-child) {
+    margin-bottom: 1.25rem
+  }
+  .up {
+    font-size: 1rem
   }
   .footer {
     padding-top: 1.25rem
   }
   .footer {
-    padding-bottom: 1.25rem
+    padding-bottom: 2.5rem
   }
   .footer__block-header h1:not(:last-child) {
     margin-bottom: 1.25rem
@@ -1326,16 +1367,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: 1.5625rem
   }
   .page__project {
-    padding-top: 3.125rem
+    padding-top: 5rem
   }
   .page__project {
-    padding-bottom: 2.5rem
-  }
-  .project1__body {
-    padding-bottom: 1.875rem
+    padding-bottom: 1.25rem
   }
   .project1__container {
-    padding-bottom: 3.125rem
+    padding-bottom: 1.875rem
   }
   .gallery__body {
     padding-top: 1.875rem
@@ -1524,19 +1562,25 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: clamp(1.375rem ,1.2308558559rem + .7207207207vw ,1.875rem)
   }
   .block-header__title:not(:last-child) {
-    margin-bottom: clamp(1.5625rem ,.9318693694rem + 3.1531531532vw ,3.75rem)
+    margin-bottom: clamp(1.5625rem ,1.2922297297rem + 1.3513513514vw ,2.5rem)
   }
   .block-header__title--min:not(:last-child) {
     margin-bottom: clamp(1.875rem ,1.3344594595rem + 2.7027027027vw ,3.75rem)
   }
-  .block-header__subtitle:not(:last-child) {
+  .block-header__image:not(:last-child) {
     margin-bottom: clamp(1.875rem ,1.3344594595rem + 2.7027027027vw ,3.75rem)
+  }
+  .block-header__subtitle:not(:last-child) {
+    margin-bottom: clamp(1.25rem ,1.0698198198rem + .9009009009vw ,1.875rem)
+  }
+  .up {
+    font-size: clamp(1rem ,.9279279279rem + .3603603604vw ,1.25rem)
   }
   .footer {
     padding-top: clamp(1.25rem ,1.0698198198rem + .9009009009vw ,1.875rem)
   }
   .footer {
-    padding-bottom: clamp(1.25rem ,1.0698198198rem + .9009009009vw ,1.875rem)
+    padding-bottom: clamp(1.875rem ,2.6801801802rem + -.9009009009vw ,2.5rem)
   }
   .footer__block-header h1:not(:last-child) {
     margin-bottom: clamp(1.25rem ,1.0698198198rem + .9009009009vw ,1.875rem)
@@ -1569,16 +1613,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-bottom: clamp(1.5625rem ,1.2922297297rem + 1.3513513514vw ,2.5rem)
   }
   .page__project {
-    padding-top: clamp(3.125rem ,.4222972973rem + 13.5135135135vw ,12.5rem)
+    padding-top: clamp(5rem ,2.8378378378rem + 10.8108108108vw ,12.5rem)
   }
   .page__project {
-    padding-bottom: clamp(2.5rem ,1.0585585586rem + 7.2072072072vw ,7.5rem)
-  }
-  .project1__body {
-    padding-bottom: clamp(1.875rem ,-.2871621622rem + 10.8108108108vw ,9.375rem)
+    padding-bottom: clamp(1.25rem ,.1689189189rem + 5.4054054054vw ,5rem)
   }
   .project1__container {
-    padding-bottom: clamp(3.125rem ,2.2240990991rem + 4.5045045045vw ,6.25rem)
+    padding-bottom: clamp(1.875rem ,1.3344594595rem + 2.7027027027vw ,3.75rem)
   }
   .gallery__body {
     padding-top: clamp(1.875rem ,1.6948198198rem + .9009009009vw ,2.5rem)
@@ -1626,6 +1667,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 @media (any-hover:hover) {
+  .up:hover {
+    color: #d8ae5e;
+    background-color: #fff
+  }
+  .header__logo--link:hover {
+    -webkit-text-decoration: underline .09375rem rgba(255,249,244,.902);
+    text-decoration: underline .09375rem rgba(255,249,244,.902)
+  }
+  ._header-scroll .header__logo--link:hover {
+    -webkit-text-decoration: underline .09375rem #222;
+    text-decoration: underline .09375rem #222
+  }
   .menu__item--parent:hover .submenu {
     visibility: visible;
     opacity: 1;
@@ -1664,5 +1717,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .hero__arrow:hover {
     color: #d8ae5e
+  }
+  .item__image:hover::after {
+    background-color: rgba(34,34,34,.15)
   }
 }

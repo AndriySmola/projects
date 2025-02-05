@@ -571,6 +571,25 @@ body {
   -o-object-fit: cover;
   object-fit: cover
 }
+.slide-hero__text,
+.slide-hero__title {
+  -webkit-transform: translate(0,3.75rem);
+  transform: translate(0,3.75rem);
+  opacity: 0;
+  transition: all .8s
+}
+.swiper-slide-active .slide-hero__title {
+  transition-delay: .5s
+}
+.swiper-slide-active .slide-hero__text {
+  transition-delay: .7s
+}
+.swiper-slide-active .slide-hero__text,
+.swiper-slide-active .slide-hero__title {
+  -webkit-transform: translate(0,0);
+  transform: translate(0,0);
+  opacity: 1
+}
 .project1__row {
   display: flex
 }
@@ -699,8 +718,7 @@ body {
 .articles {
   font-family: Poppins,sans-serif;
   font-weight: 500;
-  color: #495057;
-  padding-bottom: 3.75rem
+  color: #495057
 }
 .articles__container {
   max-width: 79.375rem
@@ -1469,6 +1487,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .articles {
     padding-top: 11.25rem
   }
+  .articles {
+    padding-bottom: 11.25rem
+  }
   .articles__title {
     margin-bottom: 2.8125rem
   }
@@ -1563,6 +1584,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .articles {
     padding-top: 5rem
+  }
+  .articles {
+    padding-bottom: 3.125rem
   }
   .articles__title {
     margin-bottom: 1.5625rem
@@ -1720,14 +1744,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .menu__item--parent .menu__link {
     display: block
   }
-  .submenu {
-    position: relative;
-    visibility: visible;
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-    left: 0
-  }
   .submenu__list {
     width: 100%
   }
@@ -1858,6 +1874,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .articles {
     padding-top: clamp(5rem ,3.1981981982rem + 9.009009009vw ,11.25rem)
+  }
+  .articles {
+    padding-bottom: clamp(3.125rem ,.7826576577rem + 11.7117117117vw ,11.25rem)
   }
   .articles__title {
     margin-bottom: clamp(1.5625rem ,1.2021396396rem + 1.8018018018vw ,2.8125rem)

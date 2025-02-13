@@ -5558,7 +5558,7 @@
                 loop: true,
                 effect: "fade",
                 autoplay: {
-                    delay: 3e3,
+                    delay: 1e4,
                     disableOnInteraction: false
                 },
                 pagination: {

@@ -1,7 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Work+Sans:regular,600,700&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Arsenal:regular,italic,700,700italic&display=swap);
 @import url(https://fonts.googleapis.com/css?family=Noto+Sans+Georgian:regular,500,700&display=swap);
-@import url(https://fonts.googleapis.com/css?family=Poppins:300,500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Comforter:regular&display=swap);
 @font-face {
   font-family: icons;
   font-display: swap;
@@ -303,10 +302,7 @@ body {
   min-height: 3.125rem
 }
 .header__logo {
-  font-weight: 700;
-  font-family: "Noto Sans Georgian";
-  font-family: Arsenal;
-  font-style: italic;
+  font-family: Comforter;
   position: relative;
   z-index: 5
 }
@@ -590,22 +586,22 @@ body {
   transform: translate(0,0);
   opacity: 1
 }
-.project1__row {
+.sponge__row {
   display: flex
 }
-.project1__row--reversed .project1__column:nth-child(2) {
+.sponge__row--reversed .sponge__column:nth-child(2) {
   order: 1
 }
-.project1__row--reversed .project1__column:nth-child(1) {
+.sponge__row--reversed .sponge__column:nth-child(1) {
   order: 2
 }
-.project1__column {
+.sponge__column {
   flex: 0 1 33.3333%
 }
-.project1__column--big {
+.sponge__column--big {
   flex: 0 1 66.6667%
 }
-.project1__image img {
+.sponge__image img {
   aspect-ratio: 533/200
 }
 .item {
@@ -1384,7 +1380,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 1.25rem
   }
   .header__logo {
-    font-size: 1.875rem
+    font-size: 3.125rem
   }
   .menu__list {
     -webkit-column-gap: 2.5rem;
@@ -1442,25 +1438,25 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .slide-hero__title:not(:last-child) {
     margin-bottom: 2.5rem
   }
-  .page__project {
+  .page__sponge {
     padding-top: 12.5rem
   }
-  .page__project {
+  .page__sponge {
     padding-bottom: 5rem
   }
-  .project1__container {
+  .sponge__container {
     padding-bottom: 3.75rem
   }
-  .project1__content {
+  .sponge__content {
     padding-top: 4.375rem
   }
-  .project1__content {
+  .sponge__content {
     padding-bottom: 4.0625rem
   }
-  .project1__content {
+  .sponge__content {
     padding-left: 3.4375rem
   }
-  .project1__content {
+  .sponge__content {
     padding-right: 3.4375rem
   }
   .gallery__body {
@@ -1552,13 +1548,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .slide-hero__title:not(:last-child) {
     margin-bottom: 1.5625rem
   }
-  .page__project {
+  .page__sponge {
     padding-top: 5rem
   }
-  .page__project {
+  .page__sponge {
     padding-bottom: 1.25rem
   }
-  .project1__container {
+  .sponge__container {
     padding-bottom: 1.875rem
   }
   .gallery__body {
@@ -1607,26 +1603,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .hero__arrow--next {
     right: .0000000625rem
   }
-  .project1__row {
+  .sponge__row {
     flex-direction: column
   }
-  .project1__content {
+  .sponge__content {
     padding-top: 1.875rem
   }
-  .project1__content {
+  .sponge__content {
     padding-bottom: 1.875rem
   }
-  .project1__content {
+  .sponge__content {
     padding-left: 1.25rem
   }
-  .project1__content {
+  .sponge__content {
     padding-right: 1.25rem
   }
   .item {
     height: auto;
     padding: 0 0 70% 0
   }
-  .project1__row--last .item {
+  .sponge__row--last .item {
     padding: 0 0 50% 0
   }
   .gallery__body {
@@ -1724,7 +1720,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     min-height: 3.125rem
   }
   .header__logo {
-    font-size: 1.5rem
+    font-size: 1.875rem
   }
   .menu__list {
     flex-direction: column;
@@ -1842,13 +1838,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .slide-hero__title:not(:last-child) {
     margin-bottom: clamp(1.5625rem ,1.2922297297rem + 1.3513513514vw ,2.5rem)
   }
-  .page__project {
+  .page__sponge {
     padding-top: clamp(5rem ,2.8378378378rem + 10.8108108108vw ,12.5rem)
   }
-  .page__project {
+  .page__sponge {
     padding-bottom: clamp(1.25rem ,.1689189189rem + 5.4054054054vw ,5rem)
   }
-  .project1__container {
+  .sponge__container {
     padding-bottom: clamp(1.875rem ,1.3344594595rem + 2.7027027027vw ,3.75rem)
   }
   .gallery__body {
@@ -1887,7 +1883,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 @media (min-width:47.99875em)and (max-width:89.375em) {
   .header__logo {
-    font-size: clamp(1.5rem ,1.0649791547rem + .9063170297vw ,1.875rem)
+    font-size: clamp(1.875rem ,.4249305157rem + 3.0210567657vw ,3.125rem)
   }
   .menu__link {
     font-size: clamp(.8125rem ,.7399965258rem + .1510528383vw ,.875rem)
@@ -1905,16 +1901,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .hero__arrow--next {
     right: clamp(.0000000625rem ,-4.2462956272rem + 6.8490021004vw ,1.875rem)
   }
-  .project1__content {
+  .sponge__content {
     padding-top: clamp(1.875rem ,-3.786727775rem + 9.1320031049vw ,4.375rem)
   }
-  .project1__content {
+  .sponge__content {
     padding-bottom: clamp(1.875rem ,-3.0790118031rem + 7.9905027168vw ,4.0625rem)
   }
-  .project1__content {
+  .sponge__content {
     padding-left: clamp(1.25rem ,-3.7040118031rem + 7.9905027168vw ,3.4375rem)
   }
-  .project1__content {
+  .sponge__content {
     padding-right: clamp(1.25rem ,-3.7040118031rem + 7.9905027168vw ,3.4375rem)
   }
 }

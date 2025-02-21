@@ -7546,10 +7546,31 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         }
+        function imagesInitPrjct3() {
+            const images = document.querySelectorAll(".project3__image");
+            if (images.length) images.forEach((image => {
+                const imageItem = image.querySelector("img");
+                const padding = imageItem.offsetHeight / imageItem.offsetWidth * 100;
+                image.style.paddingBottom = `${padding}%`;
+                imageItem.classList.add("init");
+            }));
+        }
+        function gridInitPrjct3() {
+            const items = document.querySelector(".project3__images");
+            new isotope(items, {
+                itemSelector: ".project3__item",
+                masonry: {
+                    fitWidth: true,
+                    gutter: 20
+                }
+            });
+        }
         window.addEventListener("load", windowLoad);
         function windowLoad() {
             imagesInit();
+            imagesInitPrjct3();
             gridInit();
+            gridInitPrjct3();
         }
         window["FLS"] = true;
         addLoadedClass();

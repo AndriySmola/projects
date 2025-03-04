@@ -291,8 +291,11 @@ body {
 }
 .header__container {
   display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 1.25rem;
+  grid-template-columns: auto 1fr auto;
+  -webkit-column-gap: 2.5rem;
+  -moz-column-gap: 2.5rem;
+  column-gap: 2.5rem;
+  row-gap: 1.25rem;
   min-height: 5rem;
   align-items: center;
   padding-top: .3125rem;
@@ -315,6 +318,17 @@ body {
   -webkit-text-decoration: underline .09375rem rgba(255,249,244,0);
   text-decoration: underline .09375rem rgba(255,249,244,0);
   transition: all .3s
+}
+.header__language-button {
+  line-height: 1.2;
+  transition: all .3s;
+  -webkit-text-decoration: underline .09375rem transparent;
+  text-decoration: underline .09375rem transparent;
+  position: relative;
+  z-index: 5
+}
+.menu-open .header__language-button {
+  color: #222
 }
 .header--prjct {
   background-color: #222
@@ -878,6 +892,38 @@ body {
   left: 0;
   background-color: rgba(34,34,34,0);
   transition: all .3s
+}
+.supernatyzm__description {
+  max-width: 50rem;
+  margin: 0 auto
+}
+.supernatyzm__images {
+  display: grid;
+  grid-template-columns: repeat(6,1fr);
+  gap: 1.25rem
+}
+.supernatyzm__image {
+  position: relative;
+  grid-column: span 2
+}
+.supernatyzm__image img {
+  aspect-ratio: 3/4
+}
+.supernatyzm__image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(34,34,34,0);
+  transition: all .3s
+}
+.supernatyzm__image--big {
+  grid-column: span 3
+}
+.supernatyzm__image--big img {
+  aspect-ratio: 2500/2142
 }
 .project3__description:not(:last-child) {
   margin-bottom: 2.5rem
@@ -1494,6 +1540,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .up {
     font-size: 1.25rem
   }
+  .header__container {
+    -webkit-column-gap: 2.5rem;
+    -moz-column-gap: 2.5rem;
+    column-gap: 2.5rem
+  }
   .header__logo {
     font-size: 3.125rem
   }
@@ -1664,6 +1715,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .figure__images {
     row-gap: 1.875rem
   }
+  .supernatyzm__container {
+    padding-top: 10.625rem
+  }
+  .supernatyzm__container {
+    padding-bottom: 3.75rem
+  }
+  .supernatyzm__description {
+    padding-bottom: 6.25rem
+  }
   .page__project3 {
     padding-top: 11.25rem
   }
@@ -1689,6 +1749,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .up {
     font-size: 1rem
+  }
+  .header__container {
+    -webkit-column-gap: .9375rem;
+    -moz-column-gap: .9375rem;
+    column-gap: .9375rem
   }
   .footer {
     padding-top: 1.25rem
@@ -1821,6 +1886,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .figure__images {
     row-gap: .9375rem
+  }
+  .supernatyzm__container {
+    padding-top: 5rem
+  }
+  .supernatyzm__container {
+    padding-bottom: 1.875rem
+  }
+  .supernatyzm__description {
+    padding-bottom: 2.5rem
   }
   .page__project3 {
     padding-top: 5rem
@@ -1957,8 +2031,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .header__container {
     min-height: 3.125rem
   }
+  .header__container {
+    display: flex;
+    justify-content: space-between
+  }
   .header__logo {
-    font-size: 1.875rem
+    font-size: 1.875rem;
+    flex-grow: 1
   }
   .menu__list {
     flex-direction: column;
@@ -2002,15 +2081,45 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     flex: 0 1 50%;
     flex-basis: 17.5rem
   }
+  .supernatyzm__images {
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: 1fr;
+    gap: .9375rem
+  }
+  .supernatyzm__image {
+    grid-column: span 1
+  }
+  .supernatyzm__image--big img {
+    aspect-ratio: 3/4
+  }
+  .supernatyzm__image--big {
+    grid-column: span 1
+  }
+  .supernatyzm__image--big:last-child {
+    grid-column: span 2
+  }
+  .supernatyzm__image--big:last-child img {
+    aspect-ratio: 1280/1097
+  }
 }
 @media (max-width:47.99875em)and (any-hover:none) {
   .icon-menu {
     cursor: default
   }
 }
+@media (max-width:47.99875em)and (max-width:37.5em) {
+  .supernatyzm__image--big:last-child {
+    grid-column: span 1
+  }
+}
 @media (max-width:39.375em) {
   .rewards-concrete__item {
     flex: 1 1 100%
+  }
+}
+@media (max-width:37.5em) {
+  .supernatyzm__images {
+    grid-template-columns: 1fr
   }
 }
 @media (max-width:29.99875em) {
@@ -2053,6 +2162,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .up {
     font-size: clamp(1rem ,.9279279279rem + .3603603604vw ,1.25rem)
+  }
+  .header__container {
+    -webkit-column-gap: clamp(.9375rem ,.4870495495rem + 2.2522522523vw ,2.5rem);
+    -moz-column-gap: clamp(.9375rem ,.4870495495rem + 2.2522522523vw ,2.5rem);
+    column-gap: clamp(.9375rem ,.4870495495rem + 2.2522522523vw ,2.5rem)
   }
   .footer {
     padding-top: clamp(1.25rem ,1.0698198198rem + .9009009009vw ,1.875rem)
@@ -2186,6 +2300,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .figure__images {
     row-gap: clamp(.9375rem ,.6672297297rem + 1.3513513514vw ,1.875rem)
   }
+  .supernatyzm__container {
+    padding-top: clamp(5rem ,3.3783783784rem + 8.1081081081vw ,10.625rem)
+  }
+  .supernatyzm__container {
+    padding-bottom: clamp(1.875rem ,1.3344594595rem + 2.7027027027vw ,3.75rem)
+  }
+  .supernatyzm__description {
+    padding-bottom: clamp(2.5rem ,1.4189189189rem + 5.4054054054vw ,6.25rem)
+  }
   .page__project3 {
     padding-top: clamp(5rem ,3.1981981982rem + 9.009009009vw ,11.25rem)
   }
@@ -2251,6 +2374,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   ._header-scroll .header__logo--link:hover {
     -webkit-text-decoration: underline .09375rem #222;
     text-decoration: underline .09375rem #222
+  }
+  .header__language-button:hover {
+    color: #d8ae5e
+  }
+  ._header-scroll .header__language-button:hover {
+    color: #000;
+    -webkit-text-decoration: underline .09375rem #000;
+    text-decoration: underline .09375rem #000
   }
   .menu__item--parent:hover .submenu {
     visibility: visible;
@@ -2318,6 +2449,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     background-color: rgba(34,34,34,.15)
   }
   .figure__image:hover::after {
+    background-color: rgba(34,34,34,.15)
+  }
+  .supernatyzm__image:hover::after {
     background-color: rgba(34,34,34,.15)
   }
   .project3__image img.init:hover {

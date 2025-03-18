@@ -7630,8 +7630,8 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         }
-        function imagesInitPrjct3() {
-            const images = document.querySelectorAll(".project3__image");
+        function imagesInitFlowers() {
+            const images = document.querySelectorAll(".flowers__image");
             if (images.length) images.forEach((image => {
                 const imageItem = image.querySelector("img");
                 const padding = imageItem.offsetHeight / imageItem.offsetWidth * 100;
@@ -7639,10 +7639,10 @@ PERFORMANCE OF THIS SOFTWARE.
                 imageItem.classList.add("init");
             }));
         }
-        function gridInitPrjct3() {
-            const items = document.querySelector(".project3__images");
+        function gridInitFlowers() {
+            const items = document.querySelector(".flowers__images");
             new isotope(items, {
-                itemSelector: ".project3__item",
+                itemSelector: ".flowers__item",
                 masonry: {
                     fitWidth: true,
                     gutter: 20
@@ -7652,11 +7652,11 @@ PERFORMANCE OF THIS SOFTWARE.
         window.addEventListener("load", windowLoad);
         function windowLoad() {
             imagesInit();
-            imagesInitPrjct3();
+            imagesInitFlowers();
             gridInit();
-            gridInitPrjct3();
+            gridInitFlowers();
         }
-        window["FLS"] = true;
+        window["FLS"] = false;
         addLoadedClass();
         menuInit();
         pageNavigation();

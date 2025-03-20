@@ -476,7 +476,8 @@ body {
 }
 .footer__copy {
   padding-top: 1.25rem;
-  text-align: center
+  text-align: center;
+  line-height: 1.2
 }
 .footer__copy p {
   font-size: .9375rem;
@@ -606,10 +607,67 @@ body {
   opacity: 1
 }
 .about__container {
-  max-width: 75rem
+  max-width: 62.5rem
 }
 .about__info .block-header__text {
   line-height: 1.4
+}
+.study__content {
+  display: grid;
+  align-items: start;
+  -webkit-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+  row-gap: .625rem;
+  grid-template-columns: 11.875rem 1fr 12.5rem;
+  line-height: 1.38
+}
+.study__content:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.study__date {
+  font-weight: 600
+}
+.study__text {
+  text-align: justify
+}
+.exhibition__content {
+  display: grid;
+  align-items: start;
+  -webkit-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+  row-gap: .625rem;
+  grid-template-columns: 11.875rem 1fr 12.5rem;
+  line-height: 1.38
+}
+.exhibition__content:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.exhibition__date {
+  font-weight: 600
+}
+.exhibition__text {
+  text-align: justify
+}
+.contest__content {
+  display: grid;
+  align-items: start;
+  -webkit-column-gap: 1.25rem;
+  -moz-column-gap: 1.25rem;
+  column-gap: 1.25rem;
+  row-gap: .625rem;
+  grid-template-columns: 11.875rem 1fr 12.5rem;
+  line-height: 1.38
+}
+.contest__content:not(:last-child) {
+  margin-bottom: 1.25rem
+}
+.contest__date {
+  font-weight: 600
+}
+.contest__text {
+  text-align: justify
 }
 .sponge__description {
   max-width: 50rem;
@@ -1543,6 +1601,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .block-header__subtitle:not(:last-child) {
     margin-bottom: 1.875rem
   }
+  .block-header__text {
+    font-size: 1.125rem
+  }
   .up {
     font-size: 1.25rem
   }
@@ -1612,6 +1673,33 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .slide-hero__title:not(:last-child) {
     margin-bottom: 2.5rem
+  }
+  .study__header:not(:last-child) {
+    margin-bottom: 2.5rem
+  }
+  .study__text {
+    font-size: 1.125rem
+  }
+  .study__text p:not(:last-child) {
+    margin-bottom: .9375rem
+  }
+  .exhibition__header:not(:last-child) {
+    margin-bottom: 2.5rem
+  }
+  .exhibition__text {
+    font-size: 1.125rem
+  }
+  .exhibition__text p:not(:last-child) {
+    margin-bottom: .9375rem
+  }
+  .contest__header:not(:last-child) {
+    margin-bottom: 2.5rem
+  }
+  .contest__text {
+    font-size: 1.125rem
+  }
+  .contest__text p:not(:last-child) {
+    margin-bottom: .9375rem
   }
   .page__sponge {
     padding-top: 12.5rem
@@ -1759,6 +1847,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .block-header__subtitle:not(:last-child) {
     margin-bottom: 1.25rem
   }
+  .block-header__text {
+    font-size: 1.0625rem
+  }
   .up {
     font-size: 1rem
   }
@@ -1805,6 +1896,33 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .slide-hero__title:not(:last-child) {
     margin-bottom: 1.5625rem
+  }
+  .study__header:not(:last-child) {
+    margin-bottom: 1.875rem
+  }
+  .study__text {
+    font-size: 1.0625rem
+  }
+  .study__text p:not(:last-child) {
+    margin-bottom: .5rem
+  }
+  .exhibition__header:not(:last-child) {
+    margin-bottom: 1.875rem
+  }
+  .exhibition__text {
+    font-size: 1.0625rem
+  }
+  .exhibition__text p:not(:last-child) {
+    margin-bottom: .5rem
+  }
+  .contest__header:not(:last-child) {
+    margin-bottom: 1.875rem
+  }
+  .contest__text {
+    font-size: 1.0625rem
+  }
+  .contest__text p:not(:last-child) {
+    margin-bottom: .5rem
   }
   .page__sponge {
     padding-top: 5rem
@@ -1932,6 +2050,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .hero__arrow--next {
     right: .0000000625rem
+  }
+  .study__content {
+    grid-template-columns: 11.875rem 1fr
+  }
+  .exhibition__content {
+    grid-template-columns: 11.875rem 1fr
+  }
+  .contest__content {
+    grid-template-columns: 11.875rem 1fr
   }
   .sponge__row {
     flex-direction: column
@@ -2087,6 +2214,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .hero__arrow {
     display: none
   }
+  .study__content {
+    grid-template-columns: auto
+  }
+  .exhibition__content {
+    grid-template-columns: auto
+  }
+  .contest__content {
+    grid-template-columns: auto
+  }
   .concrete__images {
     grid-template-columns: 1fr;
     row-gap: 1.25rem
@@ -2178,6 +2314,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .block-header__subtitle:not(:last-child) {
     margin-bottom: clamp(1.25rem ,1.0698198198rem + .9009009009vw ,1.875rem)
   }
+  .block-header__text {
+    font-size: clamp(1.0625rem ,1.044481982rem + .0900900901vw ,1.125rem)
+  }
   .up {
     font-size: clamp(1rem ,.9279279279rem + .3603603604vw ,1.25rem)
   }
@@ -2224,6 +2363,33 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .slide-hero__title:not(:last-child) {
     margin-bottom: clamp(1.5625rem ,1.2922297297rem + 1.3513513514vw ,2.5rem)
+  }
+  .study__header:not(:last-child) {
+    margin-bottom: clamp(1.875rem ,1.6948198198rem + .9009009009vw ,2.5rem)
+  }
+  .study__text {
+    font-size: clamp(1.0625rem ,1.044481982rem + .0900900901vw ,1.125rem)
+  }
+  .study__text p:not(:last-child) {
+    margin-bottom: clamp(.5rem ,.3738738739rem + .6306306306vw ,.9375rem)
+  }
+  .exhibition__header:not(:last-child) {
+    margin-bottom: clamp(1.875rem ,1.6948198198rem + .9009009009vw ,2.5rem)
+  }
+  .exhibition__text {
+    font-size: clamp(1.0625rem ,1.044481982rem + .0900900901vw ,1.125rem)
+  }
+  .exhibition__text p:not(:last-child) {
+    margin-bottom: clamp(.5rem ,.3738738739rem + .6306306306vw ,.9375rem)
+  }
+  .contest__header:not(:last-child) {
+    margin-bottom: clamp(1.875rem ,1.6948198198rem + .9009009009vw ,2.5rem)
+  }
+  .contest__text {
+    font-size: clamp(1.0625rem ,1.044481982rem + .0900900901vw ,1.125rem)
+  }
+  .contest__text p:not(:last-child) {
+    margin-bottom: clamp(.5rem ,.3738738739rem + .6306306306vw ,.9375rem)
   }
   .page__sponge {
     padding-top: clamp(5rem ,2.8378378378rem + 10.8108108108vw ,12.5rem)

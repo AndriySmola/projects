@@ -1020,6 +1020,30 @@ body {
   transition: transform .3s;
   transition: transform .3s,-webkit-transform .3s
 }
+.collages__description {
+  max-width: 50rem;
+  margin: 0 auto
+}
+.collages__images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(15rem,1fr))
+}
+.collages__image {
+  position: relative
+}
+.collages__image img {
+  aspect-ratio: 857/1280
+}
+.collages__image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(34,34,34,0);
+  transition: all .3s
+}
 .swiper {
   overflow: hidden
 }
@@ -1830,6 +1854,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .flowers__description {
     padding-bottom: 6.25rem
   }
+  .collages__container {
+    padding-top: 10.625rem
+  }
+  .collages__container {
+    padding-bottom: 3.75rem
+  }
+  .collages__description {
+    padding-bottom: 6.25rem
+  }
+  .collages__images {
+    gap: 1.25rem
+  }
 }
 @media (max-width:20em) {
   .block-header__title {
@@ -2037,6 +2073,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .flowers__description {
     padding-bottom: 2.5rem
+  }
+  .collages__container {
+    padding-top: 5rem
+  }
+  .collages__container {
+    padding-bottom: 1.875rem
+  }
+  .collages__description {
+    padding-bottom: 2.5rem
+  }
+  .collages__images {
+    gap: .625rem
   }
 }
 @media (max-width:61.99875em) {
@@ -2505,6 +2553,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .flowers__description {
     padding-bottom: clamp(2.5rem ,1.4189189189rem + 5.4054054054vw ,6.25rem)
   }
+  .collages__container {
+    padding-top: clamp(5rem ,3.3783783784rem + 8.1081081081vw ,10.625rem)
+  }
+  .collages__container {
+    padding-bottom: clamp(1.875rem ,1.3344594595rem + 2.7027027027vw ,3.75rem)
+  }
+  .collages__description {
+    padding-bottom: clamp(2.5rem ,1.4189189189rem + 5.4054054054vw ,6.25rem)
+  }
+  .collages__images {
+    gap: clamp(.625rem ,.4448198198rem + .9009009009vw ,1.25rem)
+  }
 }
 @media (min-width:47.99875em)and (max-width:89.375em) {
   .header__logo {
@@ -2647,5 +2707,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .flowers__image img.init:hover {
     -webkit-transform: scale(1.03);
     transform: scale(1.03)
+  }
+  .collages__image:hover::after {
+    background-color: rgba(34,34,34,.15)
   }
 }

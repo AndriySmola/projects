@@ -578,6 +578,20 @@ body {
 .slide-hero__text p:not(:last-child) {
   margin-bottom: .9375rem
 }
+.slide-hero__label {
+  display: flex;
+  flex-direction: column;
+  row-gap: .625rem;
+  max-width: 43.75rem;
+  align-items: flex-end
+}
+.slide-hero__label p span {
+  font-size: 1.25rem;
+  font-weight: 600
+}
+.slide-hero__label p:last-child {
+  font-style: italic
+}
 .slide-hero__image {
   position: absolute;
   top: 0;
@@ -587,6 +601,7 @@ body {
   -o-object-fit: cover;
   object-fit: cover
 }
+.slide-hero__label,
 .slide-hero__text,
 .slide-hero__title {
   -webkit-transform: translate(0,3.75rem);
@@ -600,6 +615,10 @@ body {
 .swiper-slide-active .slide-hero__text {
   transition-delay: .7s
 }
+.swiper-slide-active .slide-hero__label {
+  transition-delay: .9s
+}
+.swiper-slide-active .slide-hero__label,
 .swiper-slide-active .slide-hero__text,
 .swiper-slide-active .slide-hero__title {
   -webkit-transform: translate(0,0);
@@ -1698,6 +1717,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .slide-hero__title:not(:last-child) {
     margin-bottom: 2.5rem
   }
+  .slide-hero__text:not(:last-child) {
+    margin-bottom: 1.25rem
+  }
   .study__header:not(:last-child) {
     margin-bottom: 2.5rem
   }
@@ -1932,6 +1954,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .slide-hero__title:not(:last-child) {
     margin-bottom: 1.5625rem
+  }
+  .slide-hero__text:not(:last-child) {
+    margin-bottom: .9375rem
   }
   .study__header:not(:last-child) {
     margin-bottom: 1.875rem
@@ -2411,6 +2436,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .slide-hero__title:not(:last-child) {
     margin-bottom: clamp(1.5625rem ,1.2922297297rem + 1.3513513514vw ,2.5rem)
+  }
+  .slide-hero__text:not(:last-child) {
+    margin-bottom: clamp(.9375rem ,.8474099099rem + .4504504505vw ,1.25rem)
   }
   .study__header:not(:last-child) {
     margin-bottom: clamp(1.875rem ,1.6948198198rem + .9009009009vw ,2.5rem)

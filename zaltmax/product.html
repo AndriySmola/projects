@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>ProductCard</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250516162334">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top top-header">
+				<div class="top-header__container">
+					<nav class="top-header__menu menu-top-header">
+						<ul data-da=".menu__body, 991.98" class="menu-top-header__list">
+							<li class="menu-top-header__item menu-top-header__item--catalog"><a href="#" class="menu-top-header__link menu-top-header__link--catalog _icon-arrow-bottom">Каталог
+									товарів</a></li>
+							<li class="menu-top-header__item"><a href="#" class="menu-top-header__link">Про нас</a></li>
+							<li class="menu-top-header__item"><a href="#" class="menu-top-header__link">Оплата та доставка</a></li>
+							<li class="menu-top-header__item"><a href="#" class="menu-top-header__link">Новини</a></li>
+							<li class="menu-top-header__item"><a href="#" class="menu-top-header__link">Контакти</a></li>
+						</ul>
+					</nav>
+					<a href="#" class="top-header__user _icon-user"><span>Особистий кабінет</span></a>
+					<nav hidden class="menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<div class="menu__body"></div>
+					</nav>
+				</div>
+			</div>
+			<div class="header__body body-header">
+				<div class="body-header__container">
+					<a href="#" class="body-header__logo"></a>
+					<div data-da=".catalog-header__container, 479.98" class="body-header__search">
+						<form class="search-header" action="#">
+							<button type="submit" class="search-header__button _icon-search"></button>
+							<input autocomplete="off" type="text" name="form[]" data-error="Помилка" placeholder="Пошук" class="search-header__input">
+						</form>
+					</div>
+					<div class="body-header__actions actions-header">
+						<a href="#" class="actions-header__location _icon-location"><span>Дніпро</span></a>
+						<div data-da=".top-header__container,991.98,1" class="actions-header__phones phones-header">
+							<div data-spollers class="phones-header__items">
+								<details class="phones-header__item">
+									<summary class="phones-header__phone">
+										<a href="tel:80567774967" class="phones-header__phone-link"><span>8-056-777-49-67</span></a>
+										<button type="button" data-spoller class="phones-header__arrow _icon-arrow-bottom"></button>
+									</summary>
+									<ul class="phones-header__list">
+										<li><a href="tel:80567774968" class="phones-header__phone">8-056-777-49-68</a></li>
+										<li><a href="tel:80567774969" class="phones-header__phone">8-056-777-49-69</a></li>
+										<li><a href="tel:80567774970" class="phones-header__phone">8-056-777-49-70</a></li>
+									</ul>
+								</details>
+							</div>
+							<button type="submit" data-popup="#callback" class="phones-header__callback">Замовити дзвінок</button>
+						</div>
+						<a href="#" data-da=".top-header__container,991.98,3" class="actions-header__favorite _icon-favorite"></a>
+						<a href="#" data-da=".top-header__container,991.98,4" class="actions-header__cart cart-header">
+							<div class="cart-header__icon _icon-cart"><span>0</span></div>
+							<div class="cart-header__body">
+								<div class="cart-header__summ">0 грн.</div>
+								<div class="cart-header__link">Оформити замовлення</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="header__catalog catalog-header">
+				<div class="catalog-header__container">
+					<nav class="catalog-header__menu menu-catalog">
+						<button type="button" class="menu-catalog__back _icon-back">Назад</button>
+						<ul class="menu-catalog__list">
+							<li class="menu-catalog__item">
+								<button href="#" data-parent="1" class="menu-catalog__link">Каталог ножів</button>
+							</li>
+							<li class="menu-catalog__item">
+								<button href="#" data-parent="2" class="menu-catalog__link">Клинкова зброя</button>
+							</li>
+							<li class="menu-catalog__item">
+								<a href="#" class="menu-catalog__link">Сувенірні вироби</a>
+							</li>
+							<li class="menu-catalog__item">
+								<a href="#" class="menu-catalog__link">Ліхтарі ARMYTEK</a>
+							</li>
+							<li class="menu-catalog__item">
+								<a href="#" class="menu-catalog__link">Супутні товари</a>
+							</li>
+						</ul>
+						<div class="menu-catalog__submenu submenu-catalog">
+							<button type="button" class="submenu-catalog__back _icon-back">Назад</button>
+							<div class="submenu-catalog__container">
+								<div hidden data-submenu="1" class="submenu-catalog__block">
+									<div class="submenu-catalog__category">
+										<a href="#" class="submenu-catalog__category-link">Категорія ножів</a>
+									</div>
+									<div class="submenu-catalog__category">
+										<a href="#" class="submenu-catalog__category-link">Виробництво ножів</a>
+									</div>
+									<div class="submenu-catalog__category">
+										<a href="#" class="submenu-catalog__category-link">Ножі за марками сталі</a>
+									</div>
+									<div class="submenu-catalog__category">
+										<a href="#" class="submenu-catalog__category-link">Заточування і полірування ножів</a>
+									</div>
+									<div class="submenu-catalog__category">
+										<a href="#" class="submenu-catalog__category-link">Ножова майстерня</a>
+									</div>
+									<ul class="submenu-catalog__list">
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Обробні ножі</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Туристичні
+												ножі</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі
+												мисливські</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Булатні ножі</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі з
+												дамаска</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Тактичного
+												призначення</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Метальні ножі</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Мачете та
+												кукрі</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі кухонні</a>
+										</li>
+									</ul>
+									<ul class="submenu-catalog__list">
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі АІР</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі ЗІК</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі ЗЗОСС</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі УКРзброя</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі Зброяр</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Булат Сергія
+												Баранова</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Булат Андрія
+												Умерова</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі Златко</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі Дніпро-М</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Збройова
+												компанія</a>
+										</li>
+									</ul>
+									<ul class="submenu-catalog__list">
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												40х102С2М</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												95х18</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												100х13</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												110х18м-ШД</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												ЕІ-107 ТЦ</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												50х14МФ</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												AUS-8</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												К340</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												М390</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												ЕП-766</a>
+										</li>
+									</ul>
+									<ul class="submenu-catalog__list">
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Паста ГОЇ</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Алмазна паста</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Бруски та каміння
+												для заточування</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Заточувальні
+												системи</a>
+										</li>
+									</ul>
+									<ul class="submenu-catalog__list">
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножові клинки</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Заготовки для
+												ножів</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Лиття для
+												ножів</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Матеріали для
+												руків'я</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Догляд за
+												руків'ям ножів</a>
+										</li>
+									</ul>
+									<div class="submenu-catalog__all">
+										<a href="#" class="submenu-catalog__all-link">Показати ще</a>
+									</div>
+									<div class="submenu-catalog__all">
+										<a href="#" class="submenu-catalog__all-link">Показати ще</a>
+									</div>
+									<div class="submenu-catalog__all">
+										<a href="#" class="submenu-catalog__all-link">Показати ще</a>
+									</div>
+									<div class="submenu-catalog__all">
+										<a href="#" class="submenu-catalog__all-link">Показати ще</a>
+									</div>
+									<div class="submenu-catalog__all">
+										<a href="#" class="submenu-catalog__all-link">Показати ще</a>
+									</div>
+								</div>
+								<div hidden data-submenu="2" class="submenu-catalog__block">
+									<div class="submenu-catalog__category">
+										<a href="#" class="submenu-catalog__category-link">Виробництво ножів</a>
+									</div>
+									<div class="submenu-catalog__category">
+										<a href="#" class="submenu-catalog__category-link">Ножі за марками сталі</a>
+									</div>
+									<div class="submenu-catalog__category">
+										<a href="#" class="submenu-catalog__category-link">Ножова майстерня</a>
+									</div>
+									<ul class="submenu-catalog__list">
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі АІР</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі ЗІК</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі ЗЗОСС</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі УКРзброя</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі Зброяр</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Булат Сергія
+												Баранова</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Булат Андрія
+												Умерова</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі Златко</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі Дніпро-М</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Збройова
+												компанія</a>
+										</li>
+									</ul>
+									<ul class="submenu-catalog__list">
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												40х102С2М</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												95х18</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												100х13</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												110х18м-ШД</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												ЕІ-107 ТЦ</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												50х14МФ</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												AUS-8</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												К340</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												М390</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножі зі сталі
+												ЕП-766</a>
+										</li>
+									</ul>
+									<ul class="submenu-catalog__list">
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Ножові клинки</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Заготовки для
+												ножів</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Лиття для
+												ножів</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Матеріали для
+												руків'я</a>
+										</li>
+										<li class="submenu-catalog__item"><a href="#" class="submenu-catalog__link">Догляд за
+												руків'ям ножів</a>
+										</li>
+									</ul>
+									<div class="submenu-catalog__all">
+										<a href="#" class="submenu-catalog__all-link">Показати ще</a>
+									</div>
+									<div class="submenu-catalog__all">
+										<a href="#" class="submenu-catalog__all-link">Показати ще</a>
+									</div>
+									<div class="submenu-catalog__all">
+										<a href="#" class="submenu-catalog__all-link">Показати ще</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page page__inner">
+			<div class="page__header">
+				<div class="page__container">
+					<nav class="page__breadcrumbs breadcrumbs">
+						<ul class="breadcrumbs__list">
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link">Головна</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link">Обробні ножі</a>
+							</li>
+							<li class="breadcrumbs__item">
+								<span class="breadcrumbs__current">Ніж Снігур</span>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="page__product product">
+				<div class="product__container">
+					<section class="product__main main-product">
+						<div class="main-product__images images-main-product">
+							<div class="images-main-product__slider swiper">
+								<div class="images-main-product__wrapper swiper-wrapper">
+									<div class="images-main-product__slide swiper-slide">
+										<img class="images-main-product__image ibg" src="img/phoduct/01.webp" alt="knife image">
+									</div>
+									<div class="images-main-product__slide swiper-slide">
+										<img class="images-main-product__image ibg" src="img/phoduct//thumb01.webp" alt="knife image">
+									</div>
+									<div class="images-main-product__slide swiper-slide">
+										<img class="images-main-product__image ibg" src="img/phoduct//thumb02.webp" alt="knife image">
+									</div>
+									<div class="images-main-product__slide swiper-slide">
+										<img class="images-main-product__image ibg" src="img/phoduct/thumb03.webp" alt="knife image">
+									</div>
+									<div class="images-main-product__slide swiper-slide">
+										<img class="images-main-product__image ibg" src="img/phoduct/thumb04.webp" alt="knife image">
+									</div>
+								</div>
+							</div>
+							<div class="images-main-product__thumbs thumbs-images swiper">
+								<div class="thumbs-images__wrapper swiper-wrapper">
+									<div class="thumbs-images__slide swiper-slide">
+										<img class="thumbs-images__image ibg" src="img/phoduct/01.webp" alt="knife image">
+									</div>
+									<div class="thumbs-images__slide swiper-slide">
+										<img class="thumbs-images__image ibg" src="img/phoduct/thumb01.webp" alt="knife image">
+									</div>
+									<div class="thumbs-images__slide swiper-slide">
+										<img class="thumbs-images__image ibg" src="img/phoduct/thumb02.webp" alt="knife image">
+									</div>
+									<div class="thumbs-images__slide swiper-slide">
+										<img class="thumbs-images__image ibg" src="img/phoduct/thumb03.webp" alt="knife image">
+									</div>
+									<div class="thumbs-images__slide swiper-slide">
+										<img class="thumbs-images__image ibg" src="img/phoduct/thumb04.webp" alt="knife image">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="main-product__body body-main-product">
+							<div class="body-main-product__header header-main-product">
+								<div class="header-main-product__line">
+									<h1 class="header-main-product__title">Ніж Снігур</h1>
+									<a href="#" class="header-main-product__link _icon-compare"></a>
+									<a href="#" class="header-main-product__link _icon-favorite"></a>
+								</div>
+								<div data-rating="" data-rating-value="5" class="header-main-product__rating rating"></div>
+								<div class="header-main-product__text">В наявності</div>
+							</div>
+							<div class="body-main-product__table table-main-product">
+								<div class="table-main-product__label">Артикул:</div>
+								<div class="table-main-product__value">AF0000001952</div>
+								<div class="table-main-product__label">Торгівельна марка:</div>
+								<div class="table-main-product__value">WUESTHOF (Німеччина)</div>
+								<div class="table-main-product__label">Серія:</div>
+								<div class="table-main-product__value">Ножі серії Classic Ikon</div>
+								<div class="table-main-product__label">Бонусні бали:</div>
+								<div class="table-main-product__value">38</div>
+							</div>
+							<div class="body-main-product__options options-main-product">
+								<div class="options-main-product__label">Сталь</div>
+								<div class="options-main-product__value">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Обрати сталь</option>
+										<option value="2">Обрати сталь</option>
+										<option value="3">Обрати сталь</option>
+										<option value="4">Обрати сталь</option>
+									</select>
+								</div>
+								<div class="options-main-product__label">Руків'я</div>
+								<div class="options-main-product__value">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Обрати руків'я</option>
+										<option value="2">Обрати руків'я</option>
+										<option value="3">Обрати руків'я</option>
+										<option value="4">Обрати руків'я</option>
+									</select>
+								</div>
+								<div class="options-main-product__label">Гарда і тильник</div>
+								<div class="options-main-product__value">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Обрати гарда і тильник</option>
+										<option value="2">Обрати гарда і тильник</option>
+										<option value="3">Обрати гарда і тильник</option>
+										<option value="4">Обрати гарда і тильник</option>
+									</select>
+								</div>
+								<div class="options-main-product__label">Обробка клинка</div>
+								<div class="options-main-product__value">
+									<select name="form[]" data-class-modif="form">
+										<option value="1" selected>Обрати обробка клинка</option>
+										<option value="2">Обрати обробка клинка</option>
+										<option value="3">Обрати обробка клинка</option>
+										<option value="4">Обрати обробка клинка</option>
+									</select>
+								</div>
+							</div>
+							<div class="body-main-product__actions actions-main-product">
+								<div class="actions-main-product__price">3 865 грн.</div>
+								<div class="actions-main-product__row">
+									<div data-quantity class="actions-main-product__quantity quantity">
+										<button data-quantity-minus type="button" class="quantity__button quantity__button--minus"></button>
+										<div class="quantity__input">
+											<input data-quantity-value autocomplete="off" type="text" name="form[]" value="1">
+										</div>
+										<button data-quantity-plus type="button" class="quantity__button quantity__button--plus"></button>
+									</div>
+									<div class="actions-main-product__buttons">
+										<a href="#" class="actions-main-product__cart button button--wb"><span class="_icon-cart">До кошика</span></a>
+										<a href="#" class="actions-main-product__cart button button--black"><span>Купити в 1
+												клік</span></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section data-tabs="992" class="product__info info-product tabs">
+						<nav data-tabs-titles class="info-product__tabs tabs__navigation">
+							<button type="button" class="info-product__title tabs__title _tab-active">Опис</button>
+							<button type="button" class="info-product__title tabs__title">Характеристики</button>
+							<button type="button" class="info-product__title tabs__title">Відгуки</button>
+							<button type="button" class="info-product__title tabs__title">Доставка</button>
+						</nav>
+						<div data-tabs-body class="info-product__content tabs__content">
+							<div class="info-product__body tabs__body">
+								<div class="info-product__text">
+									<p>
+										Легкий зручний <span>ніж з клинком</span>, що має пологі увігнуті лінзоподібні спуски
+										<span>на дві третини ширини клинка</span>, які утворюють тонке лезо, яке прекрасно ріже,
+										<span>завтовшки приблизно 0,6 мм</span> у районі підводів.
+									</p>
+									<p>
+										<span>Обух клинка зі спинкою рукояті</span> має одну плавну дугоподібну лінію. На п'яті
+										перед рукояттю
+										є <span>підпальцевий виріз для точних робіт</span>.
+									</p>
+									<p>
+										Необхідно проявляти деяку обережність під час роботи з великими бічними навантаженнями
+										<span>на лезо ножа</span>, зважаючи на невелику товщину клинка в робочій частині.
+									</p>
+									<p>
+										Монтаж руків'я накладний плашковий. На вершині рукояті, функцію якого виконує хвостовик,
+										що виступає з під плашок, є <span>отвір під темляк</span>. Цей ніж зручний помічник під
+										час роботи <span>з продуктами і полювання на борову і водоплавну дичину</span>.
+									</p>
+								</div>
+							</div>
+							<div class="info-product__body tabs__body">
+								<div class="info-product__text">
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus eos facere enim
+										molestiae sunt itaque necessitatibus similique aspernatur tempore est quam, earum, harum
+										omnis dolorem ipsa saepe fuga nostrum unde?
+									</p>
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum doloribus cum ab impedit
+										culpa ea, quos inventore est omnis? Temporibus nobis sequi, expedita ipsa ex accusamus
+										facilis animi dolorum veritatis.
+									</p>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam obcaecati, vitae beatae,
+										odio minus perspiciatis dolores atque soluta nobis exercitationem distinctio suscipit sed,
+										alias ea doloribus voluptatem velit consequuntur aliquid?
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatum nam sit earum?
+										Ex omnis enim sunt. Non accusamus alias velit nostrum soluta! Dolores corrupti, odit natus
+										totam excepturi fugit?
+									</p>
+								</div>
+							</div>
+							<div class="info-product__body tabs__body">
+								<div class="info-product__text">
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam obcaecati, vitae beatae,
+										odio minus perspiciatis dolores atque soluta nobis exercitationem distinctio suscipit sed,
+										alias ea doloribus voluptatem velit consequuntur aliquid?
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatum nam sit earum?
+										Ex omnis enim sunt. Non accusamus alias velit nostrum soluta! Dolores corrupti, odit natus
+										totam excepturi fugit?
+									</p>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus eos facere enim
+										molestiae sunt itaque necessitatibus similique aspernatur tempore est quam, earum, harum
+										omnis dolorem ipsa saepe fuga nostrum unde?
+									</p>
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum doloribus cum ab impedit
+										culpa ea, quos inventore est omnis? Temporibus nobis sequi, expedita ipsa ex accusamus
+										facilis animi dolorum veritatis.
+									</p>
+								</div>
+							</div>
+							<div class="info-product__body tabs__body">
+								<div class="info-product__text">
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus eos facere enim
+										molestiae sunt itaque necessitatibus similique aspernatur tempore est quam, earum, harum
+										omnis dolorem ipsa saepe fuga nostrum unde?
+									</p>
+									<p>
+										Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum doloribus cum ab impedit
+										culpa ea, quos inventore est omnis? Temporibus nobis sequi, expedita ipsa ex accusamus
+										facilis animi dolorum veritatis.
+									</p>
+									<p>
+										Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam obcaecati, vitae beatae,
+										odio minus perspiciatis dolores atque soluta nobis exercitationem distinctio suscipit sed,
+										alias ea doloribus voluptatem velit consequuntur aliquid?
+									</p>
+									<p>
+										Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis voluptatum nam sit earum?
+										Ex omnis enim sunt. Non accusamus alias velit nostrum soluta! Dolores corrupti, odit natus
+										totam excepturi fugit?
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="product__similar">
+						<div class="products-slider">
+							<div class="products-slider__container">
+								<div class="products-slider__header">
+									<h2 class="products-slider__title">Схожі товари</h2>
+								</div>
+								<div class="products-slider__slider swiper">
+									<div class="products-slider__wrapper swiper-wrapper">
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+									</div>
+									<div class="products-slider__dotts"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="product__recommended">
+						<div class="products-slider">
+							<div class="products-slider__container">
+								<div class="products-slider__header">
+									<h2 class="products-slider__title">Рекомендуємо</h2>
+								</div>
+								<div class="products-slider__slider swiper">
+									<div class="products-slider__wrapper swiper-wrapper">
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+										<div class="products-slider__slide swiper-slide">
+											<article class="product-card">
+												<a href="#" class="product-card__link">
+													<img class="product-card__image ibg ibg--contain" src="img/product-card/image.webp" alt="knife image">
+												</a>
+												<div class="product-card__body">
+													<h4 class="product-card__title">
+														<a href="#" class="product-card__link-title">Ніж Лиса</a>
+													</h4>
+													<div class="product-card__info info-product-card">
+														<div class="info-product-card__size">95х18</div>
+														<div class="info-product-card__materials">Горіх, Алюміній</div>
+													</div>
+													<div class="product-card__rating rating-product-card">
+														<div data-rating="" data-rating-value="5" class="rating-product-card__rating rating"></div>
+														<a href="#" class="rating-product-card__feedbacks">12 відгуків</a>
+													</div>
+												</div>
+												<div class="product-card__footer">
+													<div class="product-card__price">2 719 грн.</div>
+													<div class="product-card__actions">
+														<a href="#" class="product-card__compare _icon-compare"></a>
+														<a href="#" class="product-card__favorite _icon-favorite"></a>
+													</div>
+												</div>
+												<button type="button" class="product-card__cart"><span>До кошика</span></button>
+											</article>
+										</div>
+									</div>
+									<div class="products-slider__dotts"></div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<section class="footer__text text-footer">
+				<div class="text-footer__container">
+					<h1 class="text-footer__title">Златоустівські ножі інтернет-магазин «ЗЛАТМАКС»</h1>
+					<div class="text-footer__text">
+						<p>
+							Наш інтернет-магазин «ЗЛАТМАКС» пропонує Вам ножі дуже високої якості з міста зброярів - Златоуста.
+							Златоустівські ножі відомі і популярні серед споживачів як на українському ринку, так і за кордоном: ножі
+							мисливські, господарські, туристичні, рибальські, складні і метальні. Ніж Златоуста - це ідеальний друг і
+							товариш у повсякденному житті і в екстремальних ситуаціях. На багато продукції поширюється гарантія до 10
+							років - це один з головних показників якості. Для Вас на нашому сайті «zlatmax» запропоновано величезний
+							асортимент Златоустівських ножів. Наші менеджери допоможуть визначитися і підібрати найкращий
+							Златоустівський ніж, орієнтуючись на Ваші побажання.
+						</p>
+					</div>
+				</div>
+			</section>
+			<div class="footer__container">
+				<div class="footer__body body-footer">
+					<div class="body-footer__row">
+						<div class="body-footer__item item-footer">
+							<div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+								<details class="spoller-item-footer__item">
+									<summary class="spoller-item-footer__title">ІНФОРМАЦІЯ</summary>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Златоустівські ножі у Дніпрі та
+															Дніпропетровській області</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">
+														<span>Ножові сталі</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">
+														<span>Про нас</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">
+														<span>Умови оплати та доставки</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">
+														<span>Політика конфіденційності</span></a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+								<details class="spoller-item-footer__item">
+									<summary class="spoller-item-footer__title">СЛУЖБА ПІДТРИМКИ</summary>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Конфеденційна інформація</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Повернення товару</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link">
+														<span>Мапа сайту</span></a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+								<details class="spoller-item-footer__item">
+									<summary class="spoller-item-footer__title">ДОДАТКОВО</summary>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Подарункові сертифікати</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Партнери</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Товари зі знижкою</span></a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+								<details class="spoller-item-footer__item">
+									<summary class="spoller-item-footer__title">ОСОБИСТИЙ КАБІНЕТ</summary>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Особистий кабінет</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Історія замовлень</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Мої закладки</span></a>
+												</li>
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Розсилка новин</span></a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+					</div>
+					<div class="body-footer__row">
+						<div class="body-footer__item item-footer">
+							<div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+								<details class="spoller-item-footer__item">
+									<summary class="spoller-item-footer__title">контакти</summary>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="tel:88007774967" class="menu-footer__link _icon-footer-phone"><span>8(800)777-49-67</span></a>
+												</li>
+												<li class="menu-footer__item _icon-footer-clock">
+													<div>
+														<p>Пн-Пт</p>
+														<p>7:00 - 16:00</p>
+													</div>
+												</li>
+												<li class="menu-footer__item _icon-footer-location">
+													<div>
+														<p>Златоуст,</p>
+														<p>вул. Шосейна,</p>
+														<p>д.1, офіс «6Б»</p>
+													</div>
+												</li>
+												<li class="menu-footer__item">
+													<a href="maito:info@zlatmax.ua" class="menu-footer__link _icon-footer-email"><span>info@zlatmax.ua</span></a>
+												</li>
+											</ul>
+										</nav>
+										<ul class="social-footer">
+											<li class="social-footer__item">
+												<a href="#" class="social-footer__link">
+													<img src="img/icons/social/facebook.webp" alt="facebook icon">
+												</a>
+											</li>
+											<li class="social-footer__item">
+												<a href="#" class="social-footer__link">
+													<img src="img/icons/social/viber.webp" alt="viber icon">
+												</a>
+											</li>
+											<li class="social-footer__item">
+												<a href="#" class="social-footer__link">
+													<img src="img/icons/social/telegram.webp" alt="telegram icon">
+												</a>
+											</li>
+											<li class="social-footer__item">
+												<a href="#" class="social-footer__link">
+													<img src="img/icons/social/whatsapp.webp" alt="whatsapp icon">
+												</a>
+											</li>
+										</ul>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+								<details class="spoller-item-footer__item">
+									<summary class="spoller-item-footer__title">КОРИСНІ ПОСИЛАННЯ</summary>
+									<div class="spoller-item-footer__body">
+										<nav class="menu-footer">
+											<ul class="menu-footer__list">
+												<li class="menu-footer__item">
+													<a href="#" class="menu-footer__link"><span>Способи оплати та доставки</span></a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+								<details class="spoller-item-footer__item">
+									<summary data-spoller class="spoller-item-footer__title">НАША ГАРАНТІЯ</summary>
+									<div class="spoller-item-footer__body">
+										<div class="spoller-item-footer__text">
+											<p>
+												Незадоволені своєю покупкою? Ви можете повернути її протягом 30 днів з дати
+												отримання, згідно з <a href="#">нашими правилами</a>
+											</p>
+										</div>
+									</div>
+								</details>
+							</div>
+						</div>
+						<div class="body-footer__item item-footer">
+							<div data-spollers="767.98" class="item-footer__spoller spoller-item-footer">
+								<details class="spoller-item-footer__item">
+									<summary type="button" data-spoller class="spoller-item-footer__title">розсилка новин</summary>
+									<form action="#" class="spoller-item-footer__body footer-subscribe">
+										<label for="subscribe-input" class="footer-subscribe__label">Підпишіться просто зараз!</label>
+										<div class="footer-subscribe__line">
+											<input id="subscribe-input" autocomplete="off" type="text" name="form[]" data-error="Помилка" data-required="email" placeholder="example@gmail.com" class="footer-subscribe__input input">
+											<button type="submit" class="footer-subscribe__button _icon-arrow-bottom"></button>
+										</div>
+									</form>
+								</details>
+							</div>
+						</div>
+					</div>
+					<div class="body-footer__bottom">
+						<div class="body-footer__rules">
+							Усі матеріали, розміщені на сайті, мають довідковий характер і не є публічною офертою, що визначається
+							положеннями Статті 437 Цивільного кодексу України. При копіюванні матеріалів гіперпосилання на
+							www.zlatmax.ua обов'язкове!
+						</div>
+						<div class="body-footer__copy">
+							Златоустівські ножі <span>www.zlatmax.ua ©</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<div id="callback" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close">
+					<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path opacity="0.850056" d="M1.73333 1.48883L21.5469 21.0288" stroke="#979797" stroke-linecap="square" />
+						<path opacity="0.850056" d="M21.2667 1.48883L1.45309 21.0288" stroke="#979797" stroke-linecap="square" />
+					</svg>
+				</button>
+				<div class="popup__text">
+					Тут буде форма
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/app.min.js?_v=20250516162334"></script>
+</body>
+
+</html>

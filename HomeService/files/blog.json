@@ -29,7 +29,7 @@
 		{
 			"id": 3,
 			"url": "https://google.com",
-			"image": "../img/blog/blog03.jpg",
+			"image": "img/blog/blog03.webp",
 			"date": "19 Jan 2023",
 			"title": "Painting Techniques for a Kitchen Refresh",
 			"text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog post. From connectivity problems to device malfunctions, we provide step-by-step solutions to help you restore the seamless functionality of your smart home system. Gain expert insights practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!</p>",
@@ -42,7 +42,7 @@
 		{
 			"id": 4,
 			"url": "https://google.com",
-			"image": "../img/blog/blog01.jpg",
+			"image": "img/blog/blog01.webp",
 			"date": "19 Jan 2023",
 			"title": "Understanding Smart Home Systems & Maintenance",
 			"text": "<p>Discover the ultimate guide to troubleshooting common smart home issues in our latest blog practical tips, and insider advice to keep your home automation running smoothly. Don't let technical glitches hinder your smart home experience - empower yourself with the knowledge to resolve issues and enjoy the convenience of your connected home. Visit our blog now and become a troubleshooting pro!</p>",

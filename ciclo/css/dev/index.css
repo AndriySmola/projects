@@ -257,15 +257,6 @@ body {
   justify-content: center;
   min-height: 100%;
 }
-.screan-01__body::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(28, 31, 37, 0.6);
-}
 .screan-01__section-header {
   position: relative;
   z-index: 2;
@@ -276,6 +267,15 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+}
+.screan-01__image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(28, 31, 37, 0.6);
 }
 .screan-01__image img {
   width: 100%;

@@ -5,11 +5,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="shortcut icon" href="assets/img/favicon.ico">
 		<title>Ciclo</title>
-		<script type="module" crossorigin="" src="./js/index.min.js?v=1751535968482"></script>
-		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1751535968482">
+		<script type="module" crossorigin="" src="./js/index.min.js?v=1752240272490"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/index.min.css?v=1752240272490">
 	</head>
 	<body>
 		<div class="wrapper">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<!-- <include src="@components/layout/menu/menu.html" locals='{"active":"Home"}'></include> -->
+				</div>
+			</header>
 			<main data-fls-fullpage="" data-fls-fullpage-bullets="" class="page page--home">
 				<section data-fls-fullpage-section="" class="page__section screan-01">
 					<div class="screan-01__container">
@@ -22,7 +27,7 @@
 							<picture>
 								<source media="(max-width: 600px)" srcset="./assets/img/screen-01/image-600.webp" type="image/webp">
 								<source media="(max-width: 1200px)" srcset="./assets/img/screen-01/image-1200.webp" type="image/webp">
-								<img class="screan-01__image ibg" alt="main image" src="./assets/img/screen-01/image.webp">
+								<img class="screan-01__image /*ibg*/" alt="main image" src="./assets/img/screen-01/image.webp">
 							</picture>
 						</div>
 					</div>
@@ -457,6 +462,9 @@
 					</div>
 				</section>
 			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container"></div>
+			</footer>
 		</div>
 	</body>
 </html>

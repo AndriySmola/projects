@@ -304,6 +304,7 @@ body {
   position: relative;
   z-index: 3;
   color: #fff;
+  padding-bottom: 2%;
 }
 .hero-page__title:not(:last-child) {
   margin-bottom: 1.25rem;
@@ -511,10 +512,10 @@ body {
     margin-bottom: 1.875rem;
   }
   .hero-page__body {
-    padding-top: 17.5rem;
+    padding-top: 21.875rem;
   }
-  .hero-page__body {
-    padding-bottom: 0.625rem;
+  .hero-page__body--small {
+    padding-top: 31.25rem;
   }
   .hero-page__main-paragraph:not(:last-child) {
     margin-bottom: 1.25rem;
@@ -549,10 +550,10 @@ body {
     margin-bottom: clamp( 1.875rem , 0.25337837838125rem  +  8.1081081081vw , 7.5rem );
   }
   .hero-page__body {
-    padding-top: clamp( 7.5rem , 20.38288288288125rem  +  -14.4144144144vw , 17.5rem );
+    padding-top: clamp( 13.75rem , 24.21734234234375rem  +  -11.7117117117vw , 21.875rem );
   }
-  .hero-page__body {
-    padding-bottom: clamp( 0.625rem , -0.09572072071875rem  +  3.6036036036vw , 3.125rem );
+  .hero-page__body--small {
+    padding-top: clamp( 13.75rem , 36.29504504504375rem  +  -25.2252252252vw , 31.25rem );
   }
   .hero-page__main-paragraph:not(:last-child) {
     margin-bottom: clamp( 1.25rem , 0.7094594594625rem  +  2.7027027027vw , 3.125rem );
@@ -624,16 +625,16 @@ body {
     margin-bottom: 7.5rem;
   }
   .hero-page__body {
-    padding-top: 7.5rem;
-  }
-  .hero-page__body {
-    padding-bottom: 3.125rem;
+    padding-top: 13.75rem;
   }
   .hero-page__body {
     margin-left: 3.4375rem;
   }
   .hero-page__body {
     margin-right: 42.8125rem;
+  }
+  .hero-page__body--small {
+    padding-top: 13.75rem;
   }
   .hero-page__main-paragraph:not(:last-child) {
     margin-bottom: 3.125rem;

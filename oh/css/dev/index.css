@@ -143,6 +143,92 @@ body {
 
 .title--min {
   line-height: 1.2;
+}[data-fls-spollers] summary {
+  list-style: none;
+}
+[data-fls-spollers] summary::marker, [data-fls-spollers] summary::-webkit-details-marker {
+  display: none;
+}
+
+.spollers {
+  display: grid;
+  gap: 0.9375rem;
+  max-width: 53.125rem;
+  margin: 0 auto;
+}
+
+.spollers__item {
+  font-size: 1.25rem;
+}
+
+.spollers__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 0.625rem;
+}
+.spollers__title {
+  width: 100%;
+  cursor: default;
+  text-align: left;
+  border: 0.0625rem solid #eee;
+  padding: 0.625rem 2.4375rem 0.625rem 0.625rem;
+  line-height: 1.2;
+  border-radius: 0.3125rem;
+  position: relative;
+  list-style: none;
+  background-color: #eae5de;
+}
+.spollers__title::marker, .spollers__title::-webkit-details-marker {
+  display: none;
+}
+.--spoller-init .spollers__title {
+  cursor: pointer;
+}
+.--spoller-init .spollers__title::before, .--spoller-init .spollers__title::after {
+  content: "";
+  position: absolute;
+  right: 0.625rem;
+  top: 50%;
+  background-color: #b8a9a9;
+  height: 0.125rem;
+  width: 0.9375rem;
+  transition: transform 0.5s ease 0s;
+}
+.--spoller-init .spollers__title::before {
+  transform: translate(-75%, -50%) rotate(40deg);
+}
+.--spoller-init .spollers__title::after {
+  transform: translate(0, -50%) rotate(-40deg);
+}
+.--spoller-init .spollers__title.--spoller-active::before {
+  transform: translateX(-75%) rotate(-40deg);
+  background-color: rgba(34, 34, 34, 0.7490196078);
+}
+.--spoller-init .spollers__title.--spoller-active::after {
+  transform: rotate(40deg);
+  background-color: rgba(34, 34, 34, 0.7490196078);
+}
+
+.spollers__body {
+  padding: 1.25rem;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid #eee;
+}
+.spollers__body p {
+  letter-spacing: 0.0625rem;
+  line-height: 1.2;
+}
+
+.spollers__label {
+  width: 3.125rem;
+  height: 3.125rem;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.spollers__label img {
+  width: 100%;
+  height: 100%;
 }.menu {
   justify-self: end;
 }
@@ -321,6 +407,9 @@ body {
   width: 1.21875rem;
   height: 1.0625rem;
 }
+.page__therapy {
+  background-color: #eae5de;
+}
 
 .hero-page {
   position: relative;
@@ -472,9 +561,6 @@ body {
 .therapy-page {
   counter-reset: item;
 }
-.therapy-page__container {
-  max-width: 70.625rem;
-}
 .therapy-page__title {
   text-align: center;
   text-decoration: underline;
@@ -531,7 +617,7 @@ body {
   background-color: #fff;
   border-radius: 50%;
   color: #e0afa0;
-  outline: 1rem solid #f4f8ff;
+  outline: 1rem solid #eae5de;
   z-index: 2;
 }
 .item-therapy:last-child::before {
@@ -542,14 +628,31 @@ body {
   border: 0.0625rem solid #e0afa0;
   border-radius: 0.625rem;
   position: relative;
+  box-shadow: rgba(0, 0, 0, 0.45) 0rem 1.5625rem 1.25rem -1.25rem;
 }
-.item-therapy__body > * {
-  margin-bottom: 1rem;
+.item-therapy__body {
+  display: flex;
+  flex-direction: column;
+}
+.item-therapy__label {
+  max-width: 5rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  position: absolute;
+  top: 0.625rem;
+  right: 0.625rem;
+}
+.item-therapy__label img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 .item-therapy__title {
   color: #e0afa0;
   text-decoration: underline;
   letter-spacing: 0.0625rem;
+  padding-right: 5.3125rem;
 }
 .item-therapy__text {
   letter-spacing: 0.09375rem;
@@ -558,6 +661,42 @@ body {
 }
 .item-therapy__text p:not(:last-child) {
   margin-bottom: 0.625rem;
+}
+.expertise-page__title {
+  text-align: center;
+  text-decoration: underline;
+  color: #e0afa0;
+}
+.expertise-page__subtitle {
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+}
+.certificates-page__title {
+  text-align: center;
+  text-decoration: underline;
+  color: #e0afa0;
+}
+.certificates-page__body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 0.9375rem;
+}
+
+.body-certificate__item {
+  border: 0.125rem solid #000;
+  border-radius: 0.375rem;
+  overflow: hidden;
+  aspect-ratio: 480/650;
+  box-shadow: rgba(0, 0, 0, 0.45) 0rem 1.5625rem 1.25rem -1.25rem;
+}
+.body-certificate__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
 }
 @media (max-width: 74.0625em){
   .hero-page__image {
@@ -571,6 +710,9 @@ body {
   .items-therapy__arrow {
     width: 2.5rem;
     translate: -0.15625rem 0rem;
+  }
+  .body-certificate__item {
+    flex: 0 0 calc((100% - 0.9375rem * 1) / 2);
   }
 }
 @media (max-width: 56.87375em){
@@ -699,16 +841,31 @@ body {
   .item-therapy__body {
     padding-right: 0.625rem;
   }
+  .body-certificate__item {
+    flex: 0 0 100%;
+  }
 }
 @media (max-width: 37.5em){
   .about-page__content {
-    text-align: justify;
+    text-wrap: balance;
   }
   .about-page__image:not(:last-child) {
     margin-bottom: 1.25rem;
   }
 }
 @media (max-width: 29.99875em){
+  .spollers__title {
+    min-height: 3.4375rem;
+    display: flex;
+    align-items: center;
+  }
+  .spollers__body p {
+    text-align: justify;
+  }
+  .spollers__label {
+    float: left;
+    margin: 0 0.9375rem 0 0;
+  }
   .hero-page__main-text {
     text-align: justify;
   }
@@ -732,14 +889,32 @@ body {
   .title--min {
     font-size: 1.125rem;
   }
+  .spollers__title {
+    font-size: 1.125rem;
+  }
   .page__hero {
     margin-bottom: 1.875rem;
   }
   .page__about {
-    margin-bottom: 1.875rem;
+    margin-bottom: 6.25e-8rem;
   }
   .page__therapy {
-    margin-bottom: 1.875rem;
+    padding-top: 1.875rem;
+  }
+  .page__therapy {
+    padding-bottom: 1.875rem;
+  }
+  .page__expertise {
+    padding-top: 1.875rem;
+  }
+  .page__expertise {
+    padding-bottom: 1.875rem;
+  }
+  .page__certificates {
+    padding-top: 6.25e-8rem;
+  }
+  .page__certificates {
+    padding-bottom: 1.875rem;
   }
   .hero-page__body {
     padding-top: 28.125rem;
@@ -777,6 +952,21 @@ body {
   .items-therapy__header {
     height: 3.75rem;
   }
+  .item-therapy__body {
+    row-gap: 2.5rem;
+  }
+  .expertise-page__block-head:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+  .expertise-page__title:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+  .certificates-page__block-head:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+  .certificates-page__title:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
 }
 @media (min-width: 20em) and (max-width: 89.375em){
   .title {
@@ -785,14 +975,32 @@ body {
   .title--min {
     font-size: clamp( 1.125rem , 1.052927927925rem  +  0.3603603604vw , 1.375rem );
   }
+  .spollers__title {
+    font-size: clamp( 1.125rem , 1.0889639639625rem  +  0.1801801802vw , 1.25rem );
+  }
   .page__hero {
     margin-bottom: clamp( 1.875rem , 0.25337837838125rem  +  8.1081081081vw , 7.5rem );
   }
   .page__about {
-    margin-bottom: clamp( 1.875rem , 0.25337837838125rem  +  8.1081081081vw , 7.5rem );
+    margin-bottom: clamp( 6.25e-8rem , -1.0810810005625rem  +  5.4054053153vw , 3.75rem );
   }
   .page__therapy {
-    margin-bottom: clamp( 1.875rem , 0.25337837838125rem  +  8.1081081081vw , 7.5rem );
+    padding-top: clamp( 1.875rem , 1.3344594594625rem  +  2.7027027027vw , 3.75rem );
+  }
+  .page__therapy {
+    padding-bottom: clamp( 1.875rem , 0.25337837838125rem  +  8.1081081081vw , 7.5rem );
+  }
+  .page__expertise {
+    padding-top: clamp( 1.875rem , 1.3344594594625rem  +  2.7027027027vw , 3.75rem );
+  }
+  .page__expertise {
+    padding-bottom: clamp( 1.875rem , 1.3344594594625rem  +  2.7027027027vw , 3.75rem );
+  }
+  .page__certificates {
+    padding-top: clamp( 6.25e-8rem , -1.0810810005625rem  +  5.4054053153vw , 3.75rem );
+  }
+  .page__certificates {
+    padding-bottom: clamp( 1.875rem , 1.3344594594625rem  +  2.7027027027vw , 3.75rem );
   }
   .hero-page__body {
     padding-top: clamp( 9.375rem , 33.53040540540625rem  +  -27.027027027vw , 28.125rem );
@@ -830,6 +1038,27 @@ body {
   .items-therapy__header {
     height: clamp( 3.75rem , 3.02927927928125rem  +  3.6036036036vw , 6.25rem );
   }
+  .item-therapy__body {
+    row-gap: clamp( 2.5rem , 2.31981981981875rem  +  0.9009009009vw , 3.125rem );
+  }
+  .expertise-page__block-head:not(:last-child) {
+    margin-bottom: clamp( 1.875rem , 1.69481981981875rem  +  0.9009009009vw , 2.5rem );
+  }
+  .expertise-page__title:not(:last-child) {
+    margin-bottom: clamp( 1.875rem , 1.69481981981875rem  +  0.9009009009vw , 2.5rem );
+  }
+  .certificates-page__block-head:not(:last-child) {
+    margin-bottom: clamp( 1.875rem , 1.69481981981875rem  +  0.9009009009vw , 2.5rem );
+  }
+  .certificates-page__title:not(:last-child) {
+    margin-bottom: clamp( 1.875rem , 1.69481981981875rem  +  0.9009009009vw , 2.5rem );
+  }
+}
+@media (min-width: 29.99875em){
+  .spollers__body {
+    display: flex;
+    gap: 0.9375rem;
+  }
 }
 @media (min-width: 37.5em){
   .about-page__image {
@@ -859,6 +1088,11 @@ body {
   }
   .item-therapy__body {
     padding-right: clamp( 0.625rem , -2.13013202018125rem  +  5.7400078547vw , 3rem );
+  }
+}
+@media (min-width: 47.99875em){
+  .body-certificate__item {
+    max-width: 30rem;
   }
 }
 @media (min-width: 48em) and (max-width: 89.375em){
@@ -913,12 +1147,20 @@ body {
     column-gap: clamp( 0.625rem , -3.6212958312375rem  +  6.8490023287vw , 2.5rem );
   }
 }
+@media (min-width: 62em){
+  .body-certificate__item {
+    flex: 0 0 calc((100% - 0.9375rem * 3) / 4);
+  }
+}
 @media (min-width: 89.375em){
   .title {
     font-size: 1.9375rem;
   }
   .title--min {
     font-size: 1.375rem;
+  }
+  .spollers__title {
+    font-size: 1.25rem;
   }
   .menu__list {
     column-gap: 2.5rem;
@@ -930,10 +1172,25 @@ body {
     margin-bottom: 7.5rem;
   }
   .page__about {
-    margin-bottom: 7.5rem;
+    margin-bottom: 3.75rem;
   }
   .page__therapy {
-    margin-bottom: 7.5rem;
+    padding-top: 3.75rem;
+  }
+  .page__therapy {
+    padding-bottom: 7.5rem;
+  }
+  .page__expertise {
+    padding-top: 3.75rem;
+  }
+  .page__expertise {
+    padding-bottom: 3.75rem;
+  }
+  .page__certificates {
+    padding-top: 3.75rem;
+  }
+  .page__certificates {
+    padding-bottom: 3.75rem;
   }
   .hero-page__body {
     padding-top: 9.375rem;
@@ -985,6 +1242,21 @@ body {
   }
   .item-therapy__body {
     padding-right: 3rem;
+  }
+  .item-therapy__body {
+    row-gap: 3.125rem;
+  }
+  .expertise-page__block-head:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  .expertise-page__title:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  .certificates-page__block-head:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  .certificates-page__title:not(:last-child) {
+    margin-bottom: 2.5rem;
   }
 }
 @media (any-hover: hover){

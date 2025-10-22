@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,300italic,italic&display=swap");@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600,700,300italic,italic,500italic,600italic&display=swap");* {
+@import url("https://fonts.googleapis.com/css?family=Montserrat:regular,500,600,700,300italic,italic&display=swap");@import url("https://fonts.googleapis.com/css?family=Roboto:300,regular,500,600,700,300italic,italic,500italic,600italic&display=swap");* {
 	padding: 0rem;
 	margin: 0rem;
 	border: 0rem;
@@ -71,7 +71,7 @@ h6 {
 @font-face { 
 	font-family: "iconfont"; 
 	font-display: swap;
-	src: url("../assets/fonts/iconfont.woff2?89305ae5cd07c506be00b54717363e38") format("woff2"); 
+	src: url("../assets/fonts/iconfont.woff2?1912cc4a16f7c5a14b2d51a921ca4a7f") format("woff2"); 
 } 
 [class*="--icon-"]::before{
 	font-family: iconfont; 
@@ -85,26 +85,29 @@ h6 {
 	[class*="--icon-s-insta"]::before { 
 		content: "\f103"; 
 	} 
-	[class*="--icon-phone"]::before { 
+	[class*="--icon-question"]::before { 
 		content: "\f104"; 
 	} 
-	[class*="--icon-minus"]::before { 
+	[class*="--icon-phone"]::before { 
 		content: "\f105"; 
 	} 
-	[class*="--icon-info"]::before { 
+	[class*="--icon-minus"]::before { 
 		content: "\f106"; 
 	} 
-	[class*="--icon-envelope"]::before { 
+	[class*="--icon-info"]::before { 
 		content: "\f107"; 
 	} 
-	[class*="--icon-check"]::before { 
+	[class*="--icon-envelope"]::before { 
 		content: "\f108"; 
 	} 
-	[class*="--icon-arrow"]::before { 
+	[class*="--icon-check"]::before { 
 		content: "\f109"; 
 	} 
-	[class*="--icon-angle-right"]::before { 
+	[class*="--icon-arrow"]::before { 
 		content: "\f10a"; 
+	} 
+	[class*="--icon-angle-right"]::before { 
+		content: "\f10b"; 
 	} 
 
 
@@ -159,7 +162,7 @@ body {
 }
 
 .spollers__item {
-  font-size: 1.25rem;
+  box-shadow: rgba(0, 0, 0, 0.45) 0rem 1.5625rem 1.25rem -1.25rem;
 }
 
 .spollers__title {
@@ -179,6 +182,7 @@ body {
   position: relative;
   list-style: none;
   background-color: #eae5de;
+  border: 0.0625rem solid #e0afa0;
 }
 .spollers__title::marker, .spollers__title::-webkit-details-marker {
   display: none;
@@ -687,7 +691,7 @@ body {
 }
 
 .body-certificate__item {
-  border: 0.125rem solid #000;
+  border: 0.0625rem solid #e0afa0;
   border-radius: 0.375rem;
   overflow: hidden;
   aspect-ratio: 480/650;
@@ -699,7 +703,21 @@ body {
   object-fit: contain;
   object-position: center;
 }
-
+.faq-page__title {
+  text-align: center;
+  text-decoration: underline;
+  color: #e0afa0;
+}
+.faq-page__title span::before {
+  font-size: 1.375rem;
+  font-weight: 700;
+  padding-left: 0.3125rem;
+}
+.faq-page__subtitle {
+  text-align: center;
+  font-style: italic;
+  font-weight: 600;
+}
 .blog-page__header {
   display: flex;
   justify-content: space-between;
@@ -776,6 +794,7 @@ body {
   line-height: 1.2;
   text-transform: uppercase;
   transition: all 0.3s;
+  pointer-events: none;
 }
 .blog__image {
   position: relative;
@@ -809,6 +828,9 @@ body {
 }
 .blog__text {
   color: #6c757d;
+}
+.blog__text p:not(:last-child) {
+  margin-bottom: 0.3125rem;
 }
 @media (max-width: 74.0625em){
   .hero-page__image {
@@ -956,6 +978,9 @@ body {
   .body-certificate__item {
     flex: 0 0 100%;
   }
+  .blog-page__header {
+    flex-direction: column;
+  }
 }
 @media (max-width: 37.5em){
   .about-page__content {
@@ -1028,6 +1053,12 @@ body {
   .page__certificates {
     padding-bottom: 1.875rem;
   }
+  .page__faq {
+    padding-top: 1.875rem;
+  }
+  .page__faq {
+    padding-bottom: 1.875rem;
+  }
   .page__blog {
     padding-top: 6.25e-8rem;
   }
@@ -1085,16 +1116,20 @@ body {
   .certificates-page__title:not(:last-child) {
     margin-bottom: 1.875rem;
   }
+  .faq-page__block-head:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+  .faq-page__title:not(:last-child) {
+    margin-bottom: 1.875rem;
+  }
+  .faq-page__title span::before {
+    font-size: 0.875rem;
+  }
   .blog-page__header {
     margin-bottom: 1.5625rem;
   }
   .blog-page__items {
     row-gap: 1.875rem;
-  }
-}
-@media (max-width: 767.98){
-  .blog-page__header {
-    flex-direction: column;
   }
 }
 @media (min-width: 20em) and (max-width: 89.375em){
@@ -1129,6 +1164,12 @@ body {
     padding-top: clamp( 6.25e-8rem , -1.0810810005625rem  +  5.4054053153vw , 3.75rem );
   }
   .page__certificates {
+    padding-bottom: clamp( 1.875rem , 1.3344594594625rem  +  2.7027027027vw , 3.75rem );
+  }
+  .page__faq {
+    padding-top: clamp( 1.875rem , 1.3344594594625rem  +  2.7027027027vw , 3.75rem );
+  }
+  .page__faq {
     padding-bottom: clamp( 1.875rem , 1.3344594594625rem  +  2.7027027027vw , 3.75rem );
   }
   .page__blog {
@@ -1187,6 +1228,15 @@ body {
   }
   .certificates-page__title:not(:last-child) {
     margin-bottom: clamp( 1.875rem , 1.69481981981875rem  +  0.9009009009vw , 2.5rem );
+  }
+  .faq-page__block-head:not(:last-child) {
+    margin-bottom: clamp( 1.875rem , 1.69481981981875rem  +  0.9009009009vw , 2.5rem );
+  }
+  .faq-page__title:not(:last-child) {
+    margin-bottom: clamp( 1.875rem , 1.69481981981875rem  +  0.9009009009vw , 2.5rem );
+  }
+  .faq-page__title span::before {
+    font-size: clamp( 0.875rem , 0.73085585585625rem  +  0.7207207207vw , 1.375rem );
   }
   .blog-page__header {
     margin-bottom: clamp( 1.5625rem , 1.2021396396375rem  +  1.8018018018vw , 2.8125rem );
@@ -1333,6 +1383,12 @@ body {
   .page__certificates {
     padding-bottom: 3.75rem;
   }
+  .page__faq {
+    padding-top: 3.75rem;
+  }
+  .page__faq {
+    padding-bottom: 3.75rem;
+  }
   .page__blog {
     padding-top: 5.625rem;
   }
@@ -1405,6 +1461,15 @@ body {
   .certificates-page__title:not(:last-child) {
     margin-bottom: 2.5rem;
   }
+  .faq-page__block-head:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  .faq-page__title:not(:last-child) {
+    margin-bottom: 2.5rem;
+  }
+  .faq-page__title span::before {
+    font-size: 1.375rem;
+  }
   .blog-page__header {
     margin-bottom: 2.8125rem;
   }
@@ -1437,9 +1502,6 @@ body {
   .navigation-blog__item:hover::after {
     width: 100%;
     left: 0;
-  }
-  .blog__category:hover {
-    background: rgba(255, 255, 255, 0.5);
   }
   .blog__image:hover img {
     transform: scale(1.05);

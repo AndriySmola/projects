@@ -5,7 +5,7 @@
 }
 .header__container {
   max-width: 70.625rem;
-  padding: 1.25rem 0;
+  padding-block: 1.25rem;
 }
 .header__button-link {
   display: flex;
@@ -241,6 +241,9 @@
   }
 }
 @media (max-width: 20em) {
+  .header__button-link {
+    font-size: 0.9375rem;
+  }
   .footer {
     font-size: 1rem;
   }
@@ -263,7 +266,7 @@
     padding-top: 1.25rem;
   }
   .offer__context {
-    padding-top: 3.75rem;
+    padding-top: 5.625rem;
   }
   .offer__context {
     padding-bottom: 0.9375rem;
@@ -278,7 +281,7 @@
     font-size: 1.125rem;
   }
   .offer__title-point {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   .offer__title-point:not(:last-child) {
     margin-bottom: 0.875rem;
@@ -312,6 +315,9 @@
   }
 }
 @media (min-width: 20em) and (max-width: 89.375em) {
+  .header__button-link {
+    font-size: clamp( 0.9375rem , 0.9014639639625rem  +  0.1801801802vw , 1.0625rem );
+  }
   .footer {
     font-size: clamp( 1rem , 0.9639639639625rem  +  0.1801801802vw , 1.125rem );
   }
@@ -334,7 +340,7 @@
     padding-top: clamp( 1.25rem , 0.8896396396375rem  +  1.8018018018vw , 2.5rem );
   }
   .offer__context {
-    padding-top: clamp( 3.75rem , 2.66891891891875rem  +  5.4054054054vw , 7.5rem );
+    padding-top: clamp( 5.625rem , 5.0844594594625rem  +  2.7027027027vw , 7.5rem );
   }
   .offer__context {
     padding-bottom: clamp( 0.9375rem , -0.23367117116875rem  +  5.8558558559vw , 5rem );
@@ -349,7 +355,7 @@
     font-size: clamp( 1.125rem , 1.01689189189375rem  +  0.5405405405vw , 1.5rem );
   }
   .offer__title-point {
-    font-size: clamp( 1.25rem , 1.1599099099125rem  +  0.4504504505vw , 1.5625rem );
+    font-size: clamp( 1.125rem , 1.01689189189375rem  +  0.5405405405vw , 1.5rem );
   }
   .offer__title-point:not(:last-child) {
     margin-bottom: clamp( 0.875rem , 0.76689189189375rem  +  0.5405405405vw , 1.25rem );
@@ -396,6 +402,9 @@
   }
 }
 @media (min-width: 89.375em) {
+  .header__button-link {
+    font-size: 1.0625rem;
+  }
   .footer {
     font-size: 1.125rem;
   }
@@ -433,7 +442,7 @@
     font-size: 1.5rem;
   }
   .offer__title-point {
-    font-size: 1.5625rem;
+    font-size: 1.5rem;
   }
   .offer__title-point:not(:last-child) {
     margin-bottom: 1.25rem;

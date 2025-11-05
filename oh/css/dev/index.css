@@ -1093,9 +1093,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   opacity: 1;
 }
 .about-page .about-page__text-link::before {
-  animation: rotate-vert-center 2s 1s infinite alternate-reverse both;
+  /*приклад ключових кадрів для анімації з назвою rotate-block*/
 }
-.about-page {
+.about-page .about-page__text-link::before {
+  animation: rotate-vert-center 2s 1s infinite alternate-reverse both;
   /*приклад ключових кадрів для анімації з назвою rotate-block*/
 }
 @keyframes rotate-vert-center {
@@ -1275,12 +1276,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 .blog-page__header {
   display: flex;
   justify-content: space-between;
-  gap: 0.9375rem;
+  column-gap: 0.9375rem;
+}
+.blog-page__header {
   align-items: center;
 }
 .blog-page__title {
   text-decoration: underline;
   color: #e0afa0;
+  line-height: 1;
 }
 .blog-page__tab {
   display: none;
@@ -1298,14 +1302,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 .navigation-blog {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 0.3125rem;
-  column-gap: 1.25rem;
+  row-gap: 0.9375rem;
+  column-gap: 0.9375rem;
   justify-content: center;
   align-items: center;
   font-family: "Roboto";
 }
 .navigation-blog__item {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 0.8125rem;
   line-height: 1.5;
   text-transform: uppercase;
@@ -1327,28 +1331,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 .blog {
-  display: grid;
-  align-content: start;
-  gap: 0.9375rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9375rem;
   position: relative;
-}
-.blog__category {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  z-index: 2;
-  font-family: "Roboto";
-  font-weight: 600;
-  font-size: 0.625rem;
-  color: #fff;
-  border-radius: 0.5rem;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 0.3125rem 0.625rem;
-  display: inline-block;
-  line-height: 1.2;
-  text-transform: uppercase;
-  transition: all 0.3s;
-  pointer-events: none;
 }
 .blog__image {
   position: relative;
@@ -1401,6 +1387,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .body-certificate__item {
     flex: 0 1 calc((100% - 0.9375rem * 1) / 2);
+  }
+  .blog-page__header {
+    flex-direction: column;
   }
 }
 @media (max-width: 56.87375em){
@@ -1542,9 +1531,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .body-certificate__item {
     flex: 0 1 100%;
-  }
-  .blog-page__header {
-    flex-direction: column;
   }
 }
 @media (max-width: 37.5em){
@@ -1711,6 +1697,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 0.875rem;
   }
   .blog-page__header {
+    row-gap: 1.5625rem;
+  }
+  .blog-page__header {
     margin-bottom: 1.5625rem;
   }
   .blog-page__items {
@@ -1831,6 +1820,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .faq-page__title span::before {
     font-size: clamp( 0.875rem , 0.73085585585625rem  +  0.7207207207vw , 1.375rem );
+  }
+  .blog-page__header {
+    row-gap: clamp( 1.5625rem , 1.4724099099125rem  +  0.4504504505vw , 1.875rem );
   }
   .blog-page__header {
     margin-bottom: clamp( 1.5625rem , 1.2021396396375rem  +  1.8018018018vw , 2.8125rem );
@@ -1963,6 +1955,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @media (min-width: 61.99875em) and (max-width: 89.375em){
   .menu__list {
     column-gap: clamp( 0.625rem , -3.6212958312375rem  +  6.8490023287vw , 2.5rem );
+  }
+}
+@media (min-width: 61.99875em){
+  .blog-page__header {
+    align-items: flex-end;
   }
 }
 @media (min-width: 62em){
@@ -2099,6 +2096,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
   .faq-page__title span::before {
     font-size: 1.375rem;
+  }
+  .blog-page__header {
+    row-gap: 1.875rem;
   }
   .blog-page__header {
     margin-bottom: 2.8125rem;

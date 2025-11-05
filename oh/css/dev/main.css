@@ -404,7 +404,7 @@ body {
 }
 @media (min-width: 47.99875em) and (max-width: 89.375em){
   .header__logo {
-    font-size: clamp( 1.875rem , 0.42493051569375rem  +  3.0210567657vw , 3.125rem );
+    font-size: clamp( 1.875rem , 1.512482628925rem  +  0.7552641914vw , 2.1875rem );
   }
 }
 @media (min-width: 89.375em){
@@ -418,7 +418,7 @@ body {
     font-size: 1.25rem;
   }
   .header__logo {
-    font-size: 3.125rem;
+    font-size: 2.1875rem;
   }
 }
 @media (any-hover: hover){

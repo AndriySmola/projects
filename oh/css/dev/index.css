@@ -1093,9 +1093,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   opacity: 1;
 }
 .about-page .about-page__text-link::before {
-  /*приклад ключових кадрів для анімації з назвою rotate-block*/
-}
-.about-page .about-page__text-link::before {
   animation: rotate-vert-center 2s 1s infinite alternate-reverse both;
   /*приклад ключових кадрів для анімації з назвою rotate-block*/
 }
@@ -1106,6 +1103,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   100% {
     transform: rotateY(360deg);
   }
+}
+.about-page .about-page__text-link::before {
+  /*приклад ключових кадрів для анімації з назвою rotate-block*/
 }
 
 .therapy-page {
@@ -1341,6 +1341,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   overflow: hidden;
   border-radius: 0.3125rem;
   padding-bottom: 66.875%; /* 856/1280 */
+  box-shadow: rgba(0, 0, 0, 0.45) 0rem 1.5625rem 1.25rem -1.25rem;
 }
 .blog__image img {
   position: absolute;
@@ -1350,6 +1351,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   left: 0;
   object-fit: cover;
   transition: all 0.8s;
+}
+.blog__image-position-top {
+  object-position: top;
 }
 .blog__date {
   color: #6c757d;

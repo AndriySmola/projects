@@ -1294,11 +1294,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   margin: 0 auto;
 }
 .body-price__card {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border: 0.0625rem solid #e0afa0;
   border-radius: 0.625rem;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.45) 0rem 1.5625rem 1.25rem -1.25rem;
+}
+.body-price__header {
+  flex-grow: 1;
 }
 .body-price__price {
   display: flex;

@@ -357,7 +357,7 @@ body {
     min-height: 3.125rem;
   }
   .header__logo {
-    font-size: 1.875rem;
+    font-size: 1.5625rem;
   }
 }
 @media (max-width: 29.99875em){
@@ -404,7 +404,7 @@ body {
 }
 @media (min-width: 47.99875em) and (max-width: 89.375em){
   .header__logo {
-    font-size: clamp( 1.875rem , 1.512482628925rem  +  0.7552641914vw , 2.1875rem );
+    font-size: clamp( 1.5625rem , 0.83746525785rem  +  1.5105283828vw , 2.1875rem );
   }
 }
 @media (min-width: 89.375em){

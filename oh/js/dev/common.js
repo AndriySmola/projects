@@ -115,6 +115,9 @@ let bodyLock = (delay = 500) => {
     }, delay);
   }
 };
+function getDigFormat(item, sepp = " ") {
+  return item.toString().replace(/(\d)(?=(\d\d\d)+([^\d]|$))/g, `$1${sepp}`);
+}
 function uniqArray(array) {
   return array.filter((item, index, self) => self.indexOf(item) === index);
 }
@@ -172,8 +175,9 @@ export {
   slideUp as c,
   dataMediaQueries as d,
   bodyUnlock as e,
-  getHash as f,
-  gotoBlock as g,
+  gotoBlock as f,
+  getDigFormat as g,
+  getHash as h,
   slideToggle as s,
   uniqArray as u
 };

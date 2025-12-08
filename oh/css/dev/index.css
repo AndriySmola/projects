@@ -1412,6 +1412,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   row-gap: 0.9375rem;
   position: relative;
 }
+.blog__category {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  z-index: 2;
+  font-family: "Roboto";
+  font-weight: 600;
+  font-size: 0.625rem;
+  color: #fff;
+  border-radius: 0.5rem;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.3125rem 0.625rem;
+  display: inline-block;
+  line-height: 1.2;
+  text-transform: uppercase;
+  transition: all 0.3s;
+  pointer-events: none;
+}
 .blog__image {
   position: relative;
   overflow: hidden;

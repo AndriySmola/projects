@@ -1,4 +1,16 @@
-@charset "UTF-8";.menu {
+@charset "UTF-8";[data-fls-showmore-content] {
+  margin-bottom: 0.625rem;
+}
+
+[data-fls-showmore-button] span:last-child {
+  display: none;
+}
+.--showmore-active [data-fls-showmore-button] span {
+  display: none;
+}
+.--showmore-active [data-fls-showmore-button] span:last-child {
+  display: block;
+}.menu {
   justify-self: end;
 }
 .menu__list {
@@ -1469,6 +1481,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 .blog__text p:not(:last-child) {
   margin-bottom: 0.3125rem;
+}
+.blog__block {
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  top: 100%;
+  right: 0.3125rem;
+}
+.--showmore-active .blog__block {
+  text-decoration: underline;
+  color: rgb(34, 34, 34);
 }
 @media (max-width: 74.0625em){
   .hero-page__image {
